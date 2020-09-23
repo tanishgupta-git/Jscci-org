@@ -4,7 +4,7 @@
   <title>Nepal Chamber of Commerce</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">  
+  <!-- <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">   -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -23,12 +23,12 @@
             <div class="collapse navbar-collapse " id="navbarTogglerDemo02">
               <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
                 <li class="nav-item active">
-                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                  <a class="nav-link kam" href="#">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">About Us</a>
                   </li>
-                  <li class="nav-item">
+                  <li class="nav-item ">
                     <a class="nav-link" href="#">Committe</a>
                   </li>
                 <li class="nav-item dropdown">
@@ -106,17 +106,17 @@
 
 <!-- ======= About Us Section ======= -->
           <section id="about-us" class="about-us">
-            <div class="container" data-aos="fade-up">
+            <div class="container-fluid" data-aos="fade-up">
 
               <div class="section-title">
                 <h2>About Us</strong></h2>
               </div>
 
               <div class="row content">
-                <div class="col-lg-6 build_photo" data-aos="fade-right">
+                <div class="col-lg-5 build_photo" data-aos="fade-right">
                   <img src="/assets/images/build.jpg">
                 </div>
-                <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-left">
+                <div class=" aboutCon col-lg-7 pt-4 pt-lg-0" data-aos="fade-left">
                   <p>
                     Nepal Chamber of Commerce (NCC), established in the year 1952 (2009 BS) is the 
                     first Chamber of Commerce in Nepal. At present, it has more than 1,600 ordinary members and more than 8,000 registered firms.
@@ -134,100 +134,104 @@
 
 
 <!-- press_rel container including all three container -->
-          <div class="press_rel container">
-            <div class="row">
-              <div class=" press_real_container col-lg-8" data-aos="fade-right">
-                <h3 class="press-head">Press Release</h3>           
-                <div class="myTicker">
-                  <ul>
-                    <li>
-                      <h6><a href="#">नेपाल चेम्बर अफकमर्सका अध्यक्ष श्री राजेश काजीश्रेष्ठ र तान्जानियाका राजदूत बाराका एचलुभान्डा बीच भेटघाट ।</a></h6>
-                      <div class="press_content">
-                        <div class="image-div"><img src="/assets/images/primage.jpg"></div>
-                        <div class="date_with_cont">
-                          <p class="date">September 20, 2020</p>
-                          <p class="brief">नेपाल चेम्बर अफकमर्सका अध्यक्षश्री राजेश काजीश्रेष्ठ र तान्जानियाका  राजदूत लुभान्डा बीच चेम्बर अफकमर्समाभेटघाटभएको छ । नेपाल र तान्जानियाबीच सन् १९७५ को जनवरीमा कूटनीतिक सम्बन्धकायमभएको हो। त्यसयता नै बहुपक्षीयफोरमहरूमानेपाल र तान्जानियालेएकअर्कालाई सहयोग गर्दै आइरहेको छ । 
-                            नेपालजस्तै तान्जानियापनि असंलग्नआन्दोलनको सदस्य राष्ट्रमा पर्छ । नेपाल र तान्जानिया संयुक्त राष्ट्रसंघको सशक्त सदस्यहो ।<span><a href="#">....Read More</a></span>
-                          </p>
-                        </div>
+            <div class="Dynamic_part">
+              <div class="press_rel container">
+                <div class="row">
+                  <div class=" press_real_container col-lg-8" data-aos="fade-right">
+                    <h3 class="press-head">Press Release</h3>           
+                    <div class="myTicker">
+                      <ul>
+                        <li>
+                          <h6><a href="#">नेपाल चेम्बर अफकमर्सका अध्यक्ष श्री राजेश काजीश्रेष्ठ र तान्जानियाका राजदूत बाराका एचलुभान्डा बीच भेटघाट ।</a></h6>
+                          <div class="press_content">
+                            <div class="image-div"><img src="/assets/images/primage.jpg"></div>
+                            <div class="date_with_cont">
+                              <p class="date">September 20, 2020</p>
+                              <p class="brief">नेपाल चेम्बर अफकमर्सका अध्यक्षश्री राजेश काजीश्रेष्ठ र तान्जानियाका  राजदूत लुभान्डा बीच चेम्बर अफकमर्समाभेटघाटभएको छ । नेपाल र तान्जानियाबीच सन् १९७५ को जनवरीमा कूटनीतिक सम्बन्धकायमभएको हो। त्यसयता नै बहुपक्षीयफोरमहरूमानेपाल र तान्जानियालेएकअर्कालाई सहयोग गर्दै आइरहेको छ । 
+                                नेपालजस्तै तान्जानियापनि असंलग्नआन्दोलनको सदस्य राष्ट्रमा पर्छ । नेपाल र तान्जानिया संयुक्त राष्ट्रसंघको सशक्त सदस्यहो ।<span><a href="#">....Read More</a></span>
+                              </p>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <h6><a href="#">नेपाल चेम्बर अफकमर्सका अध्यक्ष श्री राजेश काजीश्रेष्ठ र तान्जानियाका राजदूत बाराका एचलुभान्डा बीच भेटघाट ।</a></h6>
+                          <div class="press_content">
+                            <div class="image-div"><img src="/assets/images/primage.jpg"></div>
+                            <div class="date_with_cont">
+                              <p class="date">September 20, 2020</p>
+                              <p class="brief">नेपाल चेम्बर अफकमर्सका अध्यक्षश्री राजेश काजीश्रेष्ठ र तान्जानियाका  राजदूत लुभान्डा बीच चेम्बर अफकमर्समाभेटघाटभएको छ । नेपाल र तान्जानियाबीच सन् १९७५ को जनवरीमा कूटनीतिक सम्बन्धकायमभएको हो। त्यसयता नै बहुपक्षीयफोरमहरूमानेपाल र तान्जानियालेएकअर्कालाई सहयोग गर्दै आइरहेको छ । 
+                                नेपालजस्तै तान्जानियापनि असंलग्नआन्दोलनको सदस्य राष्ट्रमा पर्छ । नेपाल र तान्जानिया संयुक्त राष्ट्रसंघको सशक्त सदस्यहो ।<span><a href="#">....Read More</a></span>
+                              </p>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <h6><a href="#">नेपाल चेम्बर अफकमर्सका अध्यक्ष श्री राजेश काजीश्रेष्ठ र तान्जानियाका राजदूत बाराका एचलुभान्डा बीच भेटघाट ।</a></h6>
+                          <div class="press_content">
+                            <div class="image-div"><img src="/assets/images/primage.jpg"></div>
+                            <div class="date_with_cont">
+                              <p class="date">September 20, 2020</p>
+                              <p class="brief">नेपाल चेम्बर अफकमर्सका अध्यक्षश्री राजेश काजीश्रेष्ठ र तान्जानियाका  राजदूत लुभान्डा बीच चेम्बर अफकमर्समाभेटघाटभएको छ । नेपाल र तान्जानियाबीच सन् १९७५ को जनवरीमा कूटनीतिक सम्बन्धकायमभएको हो। त्यसयता नै बहुपक्षीयफोरमहरूमानेपाल र तान्जानियालेएकअर्कालाई सहयोग गर्दै आइरहेको छ । 
+                                नेपालजस्तै तान्जानियापनि असंलग्नआन्दोलनको सदस्य राष्ट्रमा पर्छ । नेपाल र तान्जानिया संयुक्त राष्ट्रसंघको सशक्त सदस्यहो ।<span><a href="#">....Read More</a></span>
+                              </p>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <h6><a href="#">नेपाल चेम्बर अफकमर्सका अध्यक्ष श्री राजेश काजीश्रेष्ठ र तान्जानियाका राजदूत बाराका एचलुभान्डा बीच भेटघाट ।</a></h6>
+                          <div class="press_content">
+                            <div class="image-div"><img src="/assets/images/primage.jpg"></div>
+                            <div class="date_with_cont">
+                              <p class="date">September 20, 2020</p>
+                              <p class="brief">नेपाल चेम्बर अफकमर्सका अध्यक्षश्री राजेश काजीश्रेष्ठ र तान्जानियाका  राजदूत लुभान्डा बीच चेम्बर अफकमर्समाभेटघाटभएको छ । नेपाल र तान्जानियाबीच सन् १९७५ को जनवरीमा कूटनीतिक सम्बन्धकायमभएको हो। त्यसयता नै बहुपक्षीयफोरमहरूमानेपाल र तान्जानियालेएकअर्कालाई सहयोग गर्दै आइरहेको छ । 
+                                नेपालजस्तै तान्जानियापनि असंलग्नआन्दोलनको सदस्य राष्ट्रमा पर्छ । नेपाल र तान्जानिया संयुक्त राष्ट्रसंघको सशक्त सदस्यहो ।<span><a href="#">....Read More</a></span>
+                              </p>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <h6><a href="#">नेपाल चेम्बर अफकमर्सका अध्यक्ष श्री राजेश काजीश्रेष्ठ र तान्जानियाका राजदूत बाराका एचलुभान्डा बीच भेटघाट ।</a></h6>
+                          <div class="press_content">
+                            <div class="image-div"><img src="/assets/images/primage.jpg"></div>
+                            <div class="date_with_cont">
+                              <p class="date">September 20, 2020</p>
+                              <p class="brief">नेपाल चेम्बर अफकमर्सका अध्यक्षश्री राजेश काजीश्रेष्ठ र तान्जानियाका  राजदूत लुभान्डा बीच चेम्बर अफकमर्समाभेटघाटभएको छ । नेपाल र तान्जानियाबीच सन् १९७५ को जनवरीमा कूटनीतिक सम्बन्धकायमभएको हो। त्यसयता नै बहुपक्षीयफोरमहरूमानेपाल र तान्जानियालेएकअर्कालाई सहयोग गर्दै आइरहेको छ । 
+                                नेपालजस्तै तान्जानियापनि असंलग्नआन्दोलनको सदस्य राष्ट्रमा पर्छ । नेपाल र तान्जानिया संयुक्त राष्ट्रसंघको सशक्त सदस्यहो ।<span><a href="#">....Read More</a></span>
+                              </p>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+        
+                  <div class="right_part col-lg-4" data-aos="fade-left">
+                    <div class="upcoming_events" >
+                      <h5 class="upcoming-head">Upcoming Events</h5>
+                      <div class="list-group">
+                        <a href="#" class="list-group-item">नेपाल चेम्बर अफकमर्सका अध्यक्ष श्री राजेश काजीश्रेष्ठ र तान्जानियाका राजदूत बाराका एचलुभान्डा बीच भेटघाट ।</a>
+                        <a href="#" class="list-group-item">नेपाल चेम्वर अफ कमर्सका अध्यक्ष राजेश काजी श्रेष्ठद्धारा फूडटेक उद्घाटन</a>
+                        <a href="#" class="list-group-item">चेम्बरले लर्ड बुद्ध एजुकेशन फउण्डेशनको सहकार्यमा छात्रवृत्ति आह्वान</a>
+                        <a href="#" class="list-group-item">नेपाल चेम्बर अफकमर्सका अध्यक्ष श्री राजेश काजीश्रेष्ठ र तान्जानियाका राजदूत बाराका एचलुभान्डा बीच भेटघाट ।</a>
+                        <a href="#" class="list-group-item">नेपाल चेम्वर अफ कमर्सका अध्यक्ष राजेश काजी श्रेष्ठद्धारा फूडटेक उद्घाटन</a>
                       </div>
-                    </li>
-                    <li>
-                      <h6><a href="#">नेपाल चेम्बर अफकमर्सका अध्यक्ष श्री राजेश काजीश्रेष्ठ र तान्जानियाका राजदूत बाराका एचलुभान्डा बीच भेटघाट ।</a></h6>
-                      <div class="press_content">
-                        <div class="image-div"><img src="/assets/images/primage.jpg"></div>
-                        <div class="date_with_cont">
-                          <p class="date">September 20, 2020</p>
-                          <p class="brief">नेपाल चेम्बर अफकमर्सका अध्यक्षश्री राजेश काजीश्रेष्ठ र तान्जानियाका  राजदूत लुभान्डा बीच चेम्बर अफकमर्समाभेटघाटभएको छ । नेपाल र तान्जानियाबीच सन् १९७५ को जनवरीमा कूटनीतिक सम्बन्धकायमभएको हो। त्यसयता नै बहुपक्षीयफोरमहरूमानेपाल र तान्जानियालेएकअर्कालाई सहयोग गर्दै आइरहेको छ । 
-                            नेपालजस्तै तान्जानियापनि असंलग्नआन्दोलनको सदस्य राष्ट्रमा पर्छ । नेपाल र तान्जानिया संयुक्त राष्ट्रसंघको सशक्त सदस्यहो ।<span><a href="#">....Read More</a></span>
-                          </p>
-                        </div>
+                    </div>
+                    <div class="downloads">
+                      <h5 class="Downloads-head">Downloads</h5>
+                      <div class="list-group">
+                        <a href="#" class="list-group-item">2017 Improving Trade Environmen</a>
+                        <a href="#" class="list-group-item">आपूर्ति नीति २०६५ को कार्यान्वयन योजना</a>
+                        <a href="#" class="list-group-item">वाणिज्य नीति २०६५ – कार्यान्वयन योजना</a>
+                        <a href="#" class="list-group-item">न्यूनत्तम पारिश्रमिक सम्बन्धी नेपाल सरकारबाट राजपत्रमा प्रकाशित सूचना</a>
+                        <a href="#" class="list-group-item">लघु, घरेलु तथा साना उद्योग विकास कोष सञ्चालन कार्यविधि २०६९</a>
                       </div>
-                    </li>
-                    <li>
-                      <h6><a href="#">नेपाल चेम्बर अफकमर्सका अध्यक्ष श्री राजेश काजीश्रेष्ठ र तान्जानियाका राजदूत बाराका एचलुभान्डा बीच भेटघाट ।</a></h6>
-                      <div class="press_content">
-                        <div class="image-div"><img src="/assets/images/primage.jpg"></div>
-                        <div class="date_with_cont">
-                          <p class="date">September 20, 2020</p>
-                          <p class="brief">नेपाल चेम्बर अफकमर्सका अध्यक्षश्री राजेश काजीश्रेष्ठ र तान्जानियाका  राजदूत लुभान्डा बीच चेम्बर अफकमर्समाभेटघाटभएको छ । नेपाल र तान्जानियाबीच सन् १९७५ को जनवरीमा कूटनीतिक सम्बन्धकायमभएको हो। त्यसयता नै बहुपक्षीयफोरमहरूमानेपाल र तान्जानियालेएकअर्कालाई सहयोग गर्दै आइरहेको छ । 
-                            नेपालजस्तै तान्जानियापनि असंलग्नआन्दोलनको सदस्य राष्ट्रमा पर्छ । नेपाल र तान्जानिया संयुक्त राष्ट्रसंघको सशक्त सदस्यहो ।<span><a href="#">....Read More</a></span>
-                          </p>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <h6><a href="#">नेपाल चेम्बर अफकमर्सका अध्यक्ष श्री राजेश काजीश्रेष्ठ र तान्जानियाका राजदूत बाराका एचलुभान्डा बीच भेटघाट ।</a></h6>
-                      <div class="press_content">
-                        <div class="image-div"><img src="/assets/images/primage.jpg"></div>
-                        <div class="date_with_cont">
-                          <p class="date">September 20, 2020</p>
-                          <p class="brief">नेपाल चेम्बर अफकमर्सका अध्यक्षश्री राजेश काजीश्रेष्ठ र तान्जानियाका  राजदूत लुभान्डा बीच चेम्बर अफकमर्समाभेटघाटभएको छ । नेपाल र तान्जानियाबीच सन् १९७५ को जनवरीमा कूटनीतिक सम्बन्धकायमभएको हो। त्यसयता नै बहुपक्षीयफोरमहरूमानेपाल र तान्जानियालेएकअर्कालाई सहयोग गर्दै आइरहेको छ । 
-                            नेपालजस्तै तान्जानियापनि असंलग्नआन्दोलनको सदस्य राष्ट्रमा पर्छ । नेपाल र तान्जानिया संयुक्त राष्ट्रसंघको सशक्त सदस्यहो ।<span><a href="#">....Read More</a></span>
-                          </p>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <h6><a href="#">नेपाल चेम्बर अफकमर्सका अध्यक्ष श्री राजेश काजीश्रेष्ठ र तान्जानियाका राजदूत बाराका एचलुभान्डा बीच भेटघाट ।</a></h6>
-                      <div class="press_content">
-                        <div class="image-div"><img src="/assets/images/primage.jpg"></div>
-                        <div class="date_with_cont">
-                          <p class="date">September 20, 2020</p>
-                          <p class="brief">नेपाल चेम्बर अफकमर्सका अध्यक्षश्री राजेश काजीश्रेष्ठ र तान्जानियाका  राजदूत लुभान्डा बीच चेम्बर अफकमर्समाभेटघाटभएको छ । नेपाल र तान्जानियाबीच सन् १९७५ को जनवरीमा कूटनीतिक सम्बन्धकायमभएको हो। त्यसयता नै बहुपक्षीयफोरमहरूमानेपाल र तान्जानियालेएकअर्कालाई सहयोग गर्दै आइरहेको छ । 
-                            नेपालजस्तै तान्जानियापनि असंलग्नआन्दोलनको सदस्य राष्ट्रमा पर्छ । नेपाल र तान्जानिया संयुक्त राष्ट्रसंघको सशक्त सदस्यहो ।<span><a href="#">....Read More</a></span>
-                          </p>
-                        </div>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-    
-              <div class="right_part col-lg-4" data-aos="fade-left">
-                <div class="upcoming_events" >
-                  <h5 class="upcoming-head">Upcoming Events</h5>
-                  <div class="list-group">
-                    <a href="#" class="list-group-item">नेपाल चेम्बर अफकमर्सका अध्यक्ष श्री राजेश काजीश्रेष्ठ र तान्जानियाका राजदूत बाराका एचलुभान्डा बीच भेटघाट ।</a>
-                    <a href="#" class="list-group-item">नेपाल चेम्वर अफ कमर्सका अध्यक्ष राजेश काजी श्रेष्ठद्धारा फूडटेक उद्घाटन</a>
-                    <a href="#" class="list-group-item">चेम्बरले लर्ड बुद्ध एजुकेशन फउण्डेशनको सहकार्यमा छात्रवृत्ति आह्वान</a>
-                    <a href="#" class="list-group-item">नेपाल चेम्बर अफकमर्सका अध्यक्ष श्री राजेश काजीश्रेष्ठ र तान्जानियाका राजदूत बाराका एचलुभान्डा बीच भेटघाट ।</a>
-                    <a href="#" class="list-group-item">नेपाल चेम्वर अफ कमर्सका अध्यक्ष राजेश काजी श्रेष्ठद्धारा फूडटेक उद्घाटन</a>
+                    </div>
                   </div>
                 </div>
-                <div class="downloads">
-                  <h5 class="Downloads-head">Downloads</h5>
-                  <div class="list-group">
-                    <a href="#" class="list-group-item">2017 Improving Trade Environmen</a>
-                    <a href="#" class="list-group-item">आपूर्ति नीति २०६५ को कार्यान्वयन योजना</a>
-                    <a href="#" class="list-group-item">वाणिज्य नीति २०६५ – कार्यान्वयन योजना</a>
-                    <a href="#" class="list-group-item">न्यूनत्तम पारिश्रमिक सम्बन्धी नेपाल सरकारबाट राजपत्रमा प्रकाशित सूचना</a>
-                    <a href="#" class="list-group-item">लघु, घरेलु तथा साना उद्योग विकास कोष सञ्चालन कार्यविधि २०६९</a>
-                  </div>
-                </div>
               </div>
+              
             </div>
-          </div>
+          
 <!-- press_rel container ends here including all three container -->
 
 
