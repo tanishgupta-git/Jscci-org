@@ -4,7 +4,7 @@
   <title>Nepal Chamber of Commerce</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">   -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -130,6 +130,14 @@
             </div>
           </section>
 <!-- End About Us Section -->
+<!-- Directors messaage -->
+          <div class="director_msg">
+            <div class="container">
+              <div class="row">
+                <div class=""></div>
+              </div>
+            </div>
+          </div>
 
 
 
@@ -180,7 +188,7 @@
                         <li>
                           <h6><a href="#">नेपाल चेम्बर अफकमर्सका अध्यक्ष श्री राजेश काजीश्रेष्ठ र तान्जानियाका राजदूत बाराका एचलुभान्डा बीच भेटघाट ।</a></h6>
                           <div class="press_content">
-                            <div class="image-div"><img src="/assets/images/primage.jpg"></div>
+                            <div class="image-div"><img src=""></div>
                             <div class="date_with_cont">
                               <p class="date">September 20, 2020</p>
                               <p class="brief">नेपाल चेम्बर अफकमर्सका अध्यक्षश्री राजेश काजीश्रेष्ठ र तान्जानियाका  राजदूत लुभान्डा बीच चेम्बर अफकमर्समाभेटघाटभएको छ । नेपाल र तान्जानियाबीच सन् १९७५ को जनवरीमा कूटनीतिक सम्बन्धकायमभएको हो। त्यसयता नै बहुपक्षीयफोरमहरूमानेपाल र तान्जानियालेएकअर्कालाई सहयोग गर्दै आइरहेको छ । 
@@ -209,21 +217,21 @@
                     <div class="upcoming_events" >
                       <h5 class="upcoming-head">Upcoming Events</h5>
                       <div class="list-group">
-                        <a href="#" class="list-group-item">नेपाल चेम्बर अफकमर्सका अध्यक्ष श्री राजेश काजीश्रेष्ठ र तान्जानियाका राजदूत बाराका एचलुभान्डा बीच भेटघाट ।</a>
-                        <a href="#" class="list-group-item">नेपाल चेम्वर अफ कमर्सका अध्यक्ष राजेश काजी श्रेष्ठद्धारा फूडटेक उद्घाटन</a>
-                        <a href="#" class="list-group-item">चेम्बरले लर्ड बुद्ध एजुकेशन फउण्डेशनको सहकार्यमा छात्रवृत्ति आह्वान</a>
-                        <a href="#" class="list-group-item">नेपाल चेम्बर अफकमर्सका अध्यक्ष श्री राजेश काजीश्रेष्ठ र तान्जानियाका राजदूत बाराका एचलुभान्डा बीच भेटघाट ।</a>
-                        <a href="#" class="list-group-item">नेपाल चेम्वर अफ कमर्सका अध्यक्ष राजेश काजी श्रेष्ठद्धारा फूडटेक उद्घाटन</a>
+                        <a href="#" class="list-group-item"><i class="far fa-hand-point-right"></i>नेपाल चेम्बर अफकमर्सका अध्यक्ष श्री राजेश काजीश्रेष्ठ र तान्जानियाका राजदूत बाराका एचलुभान्डा बीच भेटघाट ।</a>
+                        <a href="#" class="list-group-item"><i class="far fa-hand-point-right"></i>नेपाल चेम्वर अफ कमर्सका अध्यक्ष राजेश काजी श्रेष्ठद्धारा फूडटेक उद्घाटन</a>
+                        <a href="#" class="list-group-item"><i class="far fa-hand-point-right"></i>चेम्बरले लर्ड बुद्ध एजुकेशन फउण्डेशनको सहकार्यमा छात्रवृत्ति आह्वान</a>
+                        <a href="#" class="list-group-item"><i class="far fa-hand-point-right"></i>नेपाल चेम्बर अफकमर्सका अध्यक्ष श्री राजेश काजीश्रेष्ठ र तान्जानियाका राजदूत बाराका एचलुभान्डा बीच भेटघाट ।</a>
+                        <a href="#" class="list-group-item"><i class="far fa-hand-point-right"></i>नेपाल चेम्वर अफ कमर्सका अध्यक्ष राजेश काजी श्रेष्ठद्धारा फूडटेक उद्घाटन</a>
                       </div>
                     </div>
                     <div class="downloads">
                       <h5 class="Downloads-head">Downloads</h5>
                       <div class="list-group">
-                        <a href="#" class="list-group-item">2017 Improving Trade Environmen</a>
-                        <a href="#" class="list-group-item">आपूर्ति नीति २०६५ को कार्यान्वयन योजना</a>
-                        <a href="#" class="list-group-item">वाणिज्य नीति २०६५ – कार्यान्वयन योजना</a>
-                        <a href="#" class="list-group-item">न्यूनत्तम पारिश्रमिक सम्बन्धी नेपाल सरकारबाट राजपत्रमा प्रकाशित सूचना</a>
-                        <a href="#" class="list-group-item">लघु, घरेलु तथा साना उद्योग विकास कोष सञ्चालन कार्यविधि २०६९</a>
+                        <a href="#" class="list-group-item"><i class="far fa-hand-point-right"></i>2017 Improving Trade Environmen</a>
+                        <a href="#" class="list-group-item"><i class="far fa-hand-point-right"></i>आपूर्ति नीति २०६५ को कार्यान्वयन योजना</a>
+                        <a href="#" class="list-group-item"><i class="far fa-hand-point-right"></i>वाणिज्य नीति २०६५ – कार्यान्वयन योजना</a>
+                        <a href="#" class="list-group-item"><i class="far fa-hand-point-right"></i>न्यूनत्तम पारिश्रमिक सम्बन्धी नेपाल सरकारबाट राजपत्रमा प्रकाशित सूचना</a>
+                        <a href="#" class="list-group-item"><i class="far fa-hand-point-right"></i>लघु, घरेलु तथा साना उद्योग विकास कोष सञ्चालन कार्यविधि २०६९</a>
                       </div>
                     </div>
                   </div>
@@ -240,15 +248,38 @@
 footer code -->
             <section id="lab_social_icon_footer">
                 <!-- Include Font Awesome Stylesheet in Header -->
-                <div class="container" >
-                    <div class="text-center center-block">
-                            <a href="https://www.facebook.com/bootsnipp"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
-                            <a href="https://twitter.com/bootsnipp"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a>
-                            <a href="https://plus.google.com/+Bootsnipp-page"><i id="social-gp" class="fa fa-google-plus-square fa-3x social"></i></a>
-                            <a href="mailto:#"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
+                <div class="container">
+                  <div class="row footer_part">
+                    <div class="col-lg-4 col-md-4 footer-links">
+                      <h5>Useful Links</h5>
+                      <ul>
+                        <li><i class="fas fa-chevron-right"></i><a href="#">Home</a></li>
+                        <li><i class="fas fa-chevron-right"></i><a href="#">About us</a></li>
+                        <li><i class="fas fa-chevron-right"></i><a href="#">Commitee</a></li>
+                        <li><i class="fas fa-chevron-right"></i><a href="#">Admin Login</a></li>
+                      </ul>
                     </div>
+                    <div class="col-lg-4 col-md-4 footer-contact">
+                      <h5>Contact Us</h5>
+                      <p>
+                        Kantipath , Kathmandu <br>
+                        Nepal<br>
+                        <br>
+                        <strong>Phone:</strong> 01-4230947<br>
+                        <strong>Email:</strong> info@nepalchamber.org<br>
+                      </p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 text-center center-block">
+                      <h5>Connect with us</h5>
+                      <a href="https://www.facebook.com/bootsnipp"><i id="social-fb" class="fab fa-facebook-square fa-3x social"></i></a>
+                      <a href="https://twitter.com/bootsnipp"><i id="social-tw" class="fab fa-twitter-square fa-3x social"></i></a>
+                      <a href="https://plus.google.com/+Bootsnipp-page"><i id="social-gp" class="fab fa-google-plus-square fa-3x social"></i></a>
+                      <a href="mailto:#"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
+                   </div>
+                  </div>
+
                     <p>
-                        Copyright © 2017 Nepal Chamber. All Rights Reserved<br> Powered By : ORTED
+                        Copyright © 2017 Nepal Chamber. All Rights Reserved<br> Powered By : <strong>ORTED</strong> 
                     </p>
                 </div>
               </section>
