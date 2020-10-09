@@ -113,7 +113,7 @@ Confirm_Login();
                     $Id =      $DataRows["pressId"];
                     $DateTime =$DataRows["datetime"];
                     $PressTitle =$DataRows["title"];
-                    $HomePageimage = $DataRows["homePageimage"];
+                    $HomePageImage = $DataRows["homePageimage"];
                     $PressImageone = $DataRows["pressImageone"];
                     $PressImagetwo = $DataRows["pressImagetwo"];
                     $Sr++;
@@ -124,7 +124,7 @@ Confirm_Login();
                      <td><?php if(strlen($PressTitle)>20){$PressTitle=substr($PressTitle,0,18)."..";}
                      echo $PressTitle;?></td>
                         <td><?php echo $DateTime ?></td>
-                     <td><img src="UPLOAD/PRESS/<?php echo $HomePageimage; ?>" width="100x" height="100px" alt="No Image"></td>
+                     <td><img src="UPLOAD/PRESS/<?php echo $HomePageImage; ?>" width="100x" height="100px" alt="No Image"></td>
                      <td><img src="UPLOAD/PRESS/<?php echo $PressImageone; ?>" width="100x" height="100px" alt="No Image"></td>
                      <td><img src="UPLOAD/PRESS/<?php echo $PressImagetwo; ?>" width="100x" height="100px" alt="No Image"></td>
                      <td><a href="EditPressRelease.php?id=<?php echo $Id; ?>"><span class="btn warning">Edit</span></a></td>

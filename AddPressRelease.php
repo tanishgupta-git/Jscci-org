@@ -25,7 +25,7 @@ Confirm_Login();
 
      date_default_timezone_set("Asia/Kathmandu");
       $CurrentTime=time();
-       $DateTime=strftime("%B-%d-%Y %H:%M:%S", $CurrentTime);
+       $DateTime=strftime("%B-%d-%Y", $CurrentTime);
 
 
      if(empty($PressTitle)){
