@@ -164,13 +164,13 @@ section {
 .section-title {
   text-align: center;
   padding-bottom: 10px;
-  margin-bottom: 20px;
+
 }
 .section-title h2 {
   font-size: 32px;
   font-weight: bold;
   text-transform: uppercase;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   position: relative; 
   color: #2F1728;
 }
@@ -178,9 +178,9 @@ section {
   padding-right: 30px;
   padding-left: 30px;
 }
-.aboutCon p{
+/* .aboutCon p{
   letter-spacing: 0.1em;
-}
+} */
 
 .section-title p {
   margin-bottom: 0;
@@ -188,6 +188,7 @@ section {
 .build_photo{
   text-align: center;
 }
+
 .col-lg-5>img{
 
   border: 2px solid rgb(25, 121, 177);
@@ -335,6 +336,53 @@ justify-content: space-between;
 {
   background-color: #f5f5f5;
 }
+.director_msg{
+  background-color:#f5f5f5;
+  padding:20px 0;
+}
+.director_msg .image_part
+{
+  text-align: center;
+}
+.director_msg .image_part img
+{
+  width: 80%;
+}
+.director_msg .content_prt
+{
+  position: relative;
+}
+.btn-outline-primary
+{
+  background-color:#ff5e6c;
+  color:  #f5f5f5;
+  border: 1px solid  #f5f5f5;
+  position: relative;
+  left: 50%;
+  transform: translatex(-50%);
+  margin-top: 20px;
+}
+.btn-outline-primary a{
+  color:  #f5f5f5;
+}
+.btn-outline-primary:hover{
+  border: 1px solid#2F1728;
+  background-color:#f5f5f5;
+  
+  box-shadow: 0 3px 20px 2px rgba(20, 45, 100, 0.2);
+}
+.btn-outline-primary:hover a{
+  color: #2F1728;
+  text-decoration: none;
+}
+.content_prt h3{
+  text-align: center;
+  margin: 20px 0;
+}
+.image_part img{
+  border-radius: 10px;
+}
+
 @media only screen and (max-width: 450px) {
    a>img{
        width: 80%;
@@ -348,8 +396,16 @@ justify-content: space-between;
     max-width: 225px;
 }
 }
+@media only screen and (max-width: 992px)
+{
+  .director_msg .image_part img
+  {
+    width: 50%;
+  }
+} 
 
   @media only screen and (max-width: 768px) {
+
     .press_content> .image-div
     {
       display: none;
@@ -362,13 +418,40 @@ justify-content: space-between;
     {
       font-size: 0.8em;
     }
+    .footer-contact{
+      margin-bottom: 15px;
+    }
+
+  }
+  @media only screen and (max-width: 580px) {
+    .press_real_container{
+      width: 95%;
+      margin: 0 auto;
+    }
+
+  }
+  @media only screen and (max-width: 500px){
+
+    .aboutCon p,.content_prt p{
+      font-size: 0.80em;
+    }
+    
+    .section-title{
+      margin-bottom: 0;
+      padding-bottom: 5px;
+    }
+    .section-title h2,.content_prt h3{
+      font-size: 20px;
+    }
   }
   @media only screen and (max-width: 400px)
   {
     .myTicker li{
-      border-bottom: 1px solid rgb(25, 27, 27);
       padding: 5px;
       height: 270px;
+      }
+      .build_photo>img{
+        width: 80%;
       }
   }
 

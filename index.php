@@ -124,6 +124,7 @@
                     Located in Kathmandu, the capital city of Nepal, the NCC has been playing remarkable 
                     role in the business promotion and formulation of commercial, industrial and fiscal policies of Nepal Government.
                   </p>
+                  <button type="button" class="btn btn-outline-primary"><a href="#">Know More</a></button>
                 </div>
               </div>
 
@@ -134,7 +135,16 @@
           <div class="director_msg">
             <div class="container">
               <div class="row">
-                <div class=""></div>
+                <div class="col-lg-4 order-lg-8 image_part">
+                  <img src="/assets/images/president.jpg">
+                </div>
+                <div class="col-lg-8 order-lg-4 content_prt">
+                  <h3>View of President</h3>
+                  <p>
+                    I am delighted in introducing the website “www.nepalchamber.org” showcasing the activities from Nepal Chamber of Commerce. Nepal Chamber of Commerce is the pioneer business organization established after the democratic innovation in Nepal. Since its establishment from 1952 Nepal Chamber of Commerce is devoted in expanding chamber
+                  </p>
+                  <button type="button" class="btn btn-outline-primary"><a href="#">Know More</a></button>
+                </div>
               </div>
             </div>
           </div>
@@ -286,11 +296,12 @@ footer code -->
 <!-- 
     footer code ends here-->
                 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+                <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script> -->
                 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
                 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-                <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
-                <script type="text/javascript" src="assets/js/jquery.easy-ticker.min.js"></script>
-                <script src="assets/js/homepage.js"></script>
+
+                <!-- <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script> -->
+                <script type="text/javascript" src="/assets/js/jquery.easy-ticker.min.js"></script>
+                <script src="/assets/js/homepage.js"></script>
 </body>
 </html>
