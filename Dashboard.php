@@ -44,7 +44,7 @@ Confirm_Login();
         		<a href="Admins.php"><i class="fas fa-users"></i> Manage Admins</a>
         	</li>
         	<li>
-        		<a href="Comments.php"><i class="fas fa-file-download"></i> Downloads</a>
+        		<a href="Downloads.php"><i class="fas fa-file-download"></i> Downloads</a>
         	</li>
         	<li>
         		<a href="Index.php"><i class="fas fa-blog"></i> Live Website</a>

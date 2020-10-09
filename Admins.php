@@ -81,7 +81,7 @@ $_SESSION["TrackingURL"]=$_SERVER["PHP_SELF"];
          <a href="#" class="logo">Hello &nbsp;<?php echo  $_SESSION["NccAdminname"] ?></a>
           <button class="click-hide"><i class="fas fa-times fa-2x"></i></button><br>
        <ul>  
-            <li class="active">
+            <li>
             <a href="Dashboard.php"><i class="fas fa-cog"></i> Dashboard</a>
           </li>
           <li>
@@ -90,7 +90,7 @@ $_SESSION["TrackingURL"]=$_SERVER["PHP_SELF"];
           <li>
             <a href="Categories.php"><i class="fas fa-calendar-week"></i> Upcoming Events</a>
           </li>
-          <li>
+          <li class="active">
             <a href="Admins.php"><i class="fas fa-users"></i> Manage Admins</a>
           </li>
           <li>

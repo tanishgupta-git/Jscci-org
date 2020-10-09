@@ -110,7 +110,7 @@ Confirm_Login();
                  $sql = "SELECT * FROM pressrelease";
                  $stmt = $ConnectingDB->query($sql);
                  while($DataRows =$stmt->fetch()){
-                    $Id =      $DataRows["id"];
+                    $Id =      $DataRows["press-id"];
                     $DateTime =$DataRows["datetime"];
                     $PressTitle =$DataRows["title"];
                     $HomePageimage = $DataRows["homePageimage"];
