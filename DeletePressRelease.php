@@ -101,6 +101,7 @@
         ?>
        <div class="edit-form-container">
          <div class="form-container">
+          
              <form class="" action="DeletePost.php?id=<?php echo $SearchQueryParameter; ?>" method="post" enctype="multipart/form-data">
                   <div class="admin-input">
                     <label for="title">Post Title:</label>
