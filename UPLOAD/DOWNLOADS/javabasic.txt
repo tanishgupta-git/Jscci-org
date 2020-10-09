@@ -1,0 +1,223 @@
+
+////	   first program
+//	   int num1,num2,num3,num4,num5;
+//       float mean;
+//      //making a constructor object s for taking input
+//       Scanner s = new Scanner(System.in);
+//       
+//       System.out.println("Enter five numbers each separated by space");
+//       num1 = s.nextInt();
+//       num2 = s.nextInt();
+//       num3 = s.nextInt();
+//       num4 = s.nextInt();
+//       num5 = s.nextInt();
+//       mean = (num1 + num2 + num3 + num4 + num5)/ (float)5;
+//       System.out.println("Mean is " + mean + "median is " + num3);
+
+////fifth program
+//	   int num;
+//	   Scanner s= new Scanner(System.in);
+//	   
+//	   System.out.println("Enter the number");
+//	   num = s.nextInt();
+//	   if( num%2 == 0 ) {
+//		   System.out.println("Number is Even");   
+//	   }else {
+//		   System.out.println("Number is odd");
+//	   }
+//	   
+
+////	 largest among three numbers
+//int a,b,c;
+// Scanner s = new Scanner(System.in);
+// 
+// System.out.println("Enter three distinct numbers each separated by space");
+// a = s.nextInt();
+// b = s.nextInt();
+// c = s.nextInt();
+// if(a>b && a>c) {
+//	 System.out.println(a+ " is largest number");
+// }else if (b>a && b>c) {
+//	 System.out.println(b + " is largest number");
+// }else {
+//	 System.out.println(c+ " is largest number");
+// }
+
+//	   int year;
+//	   Scanner s = new Scanner(System.in);
+//	   System.out.println("Enter the year");
+//	   year = s.nextInt();
+//	   
+//	   if( year%4 ==0) {
+//		   if(year%100 == 0) {
+//			   if(year%400 == 0) {
+//				   System.out.println(year + " is a leap year");
+//			   }else {
+//				   System.out.println(year + " is not a leap year");
+//				   
+//			   }
+//		   }else {
+//			   System.out.println(year + " is a leap year");
+//		   }
+//	   }else {
+//		   System.out.println(year + " is not a leap year");
+//}
+	   
+//	   int num,sum=0,r=0;
+//	   Scanner s = new Scanner(System.in);
+//	   System.out.println("Enter the number");
+//	   num = s.nextInt();
+//	   while( num!=0 ) {
+//		   r = r + num%10;
+//		   num = num/10;
+//	   }
+//	   System.out.println("The sum of digits of number is "+ r);
+	   
+//	   int w,l,area;
+//	   Scanner s = new Scanner(System.in);
+//	   System.out.println("Enter the width and length separated by space");
+//	   w = s.nextInt();
+//	   l = s.nextInt();
+//	   area = w * l;
+//	   System.out.println("The area of rectangle is "+ area);
+
+//	int num,i;
+//	Scanner s = new Scanner(System.in);
+//	System.out.println("Enter the number");
+//	num = s.nextInt();
+//	for(i =1 ;i<=10;i++) {
+//		System.out.println(num*i);
+//	}
+	   
+//		int num,i,fact=1;
+//		Scanner s = new Scanner(System.in);
+//		System.out.println("Enter the number");	  
+//		num = s.nextInt();
+//		i= num;
+//	    if(num!=0) {
+//	    	while(i>0) {
+//	    		fact = fact * i;
+//	    		i=i-1;
+//	    	}
+//	    	
+//	    }
+
+//
+////		System.out.println("The Factorial is " + fact);
+//int p,r,t;
+//float SI;
+//Scanner s = new Scanner(System.in);
+//System.out.println("Enter the p,r,t each separated by space");	  
+//p = s.nextInt();
+//r = s.nextInt();
+//t = s.nextInt();
+//  SI = (float)( p * r * t ) / 100;
+//  System.out.println("The simple interest is " + SI);	   
+
+//	   float t,c;
+//	   Scanner s = new Scanner(System.in);
+//	   System.out.println("Enter thr temprature");	  
+//	   t = s.nextFloat();
+//	   c = (t-32) * 5/9;
+//	   System.out.println("the temprature in celsius is " + c);	  
+   
+//	   int num,q,r,p,sum=0;
+//	   Scanner s= new Scanner(System.in);
+//	   System.out.println("Enter the number");
+//	   num = s.nextInt();  
+//	   p = String.valueOf(num).length();
+//	   q = num;
+//	   while(q!=0) {
+//		 r = q%10;
+//		 sum = sum + (int)Math.pow(r,p);
+//		 q = q/10;
+//	   }
+//	   if(sum == num) {
+//		   System.out.println(num+" is a armstrong number");
+//	   }else {
+//		   System.out.println(num+" is not a armstrong number");   
+//	   }
+   
+//	   int i,limit=0,c=0,num;      
+//	   Scanner s= new Scanner(System.in);
+//	   System.out.println("Enter the number");
+//	   num = s.nextInt();     
+//	   limit=num/2;      
+//	   if(num==0||num==1){  
+//	    System.out.println(num+" is not prime number");      
+//	   }else{  
+//	    for(i=2;i<=limit;i++){      
+//	     if(num%i==0){      
+//	      System.out.println(num+" is not prime number");      
+//	      c++;      
+//	      break;      
+//	     }      
+//	    }      
+//	    if(c==0)  { System.out.println(num+" is prime number"); }  
+//	   }	   
+	   
+//int i,limit1,limit2,j,limit,c;
+//Scanner s= new Scanner(System.in);
+//System.out.println("Enter the two number in between you want to find prime numbers separated by space");
+//limit1 = s.nextInt();
+//limit2 = s.nextInt();
+//if(limit2 <=1 && limit1<=limit2) {
+//	System.out.println("Enter a valid limit");
+//}
+//else {
+//	
+//for(i=limit1+1;i<limit2;i++)
+//{   c=0;
+//	limit = i/2;
+//	if(i>1){
+//		    for(j=2;j<=limit;j++){      
+//		     if(i%j==0){            
+//		      c++;      
+//		      break;      
+//		     }      
+//		    }      
+//		    if(c==0) { System.out.println(i); } 				
+//	}	
+//}	   
+//}	
+
+   	   
+//float radius;
+//double circum,area;
+//Scanner s= new Scanner(System.in);
+//System.out.println("Enter the number");
+//radius = s.nextFloat(); 
+//circum = 2 * 3.14 * radius;
+//area = 3.14*radius*radius;
+//System.out.println("the area of circle is "+area+ " and circumference is "+circum);
+
+	
+//	   int num,q;
+//	   String r="";
+//	   Scanner s = new Scanner(System.in);
+//	   System.out.println("Enter the number");
+//	   num = s.nextInt();
+//	   q=num;
+//	   while( q!=0 ) {
+//		   r = r + q%10;
+//		   q = q/10;
+//	   }
+//	   if(r.equals(String.valueOf(num)) ){
+//		   System.out.println(num+" is a palindrome number");
+//	   }else {
+//		   System.out.println(num+" is not a palindrome number");
+//	   }
+
+//	 int num,prev1=1,prev2=0,i,n3=1;
+//	 Scanner s= new Scanner(System.in);
+//	 System.out.println("Enter the number");
+//	 num = s.nextInt();     
+//	 for (i=1;i<=num;i++) {
+//		     if(i>=2) {
+//			 n3 = prev1 + prev2;
+//			 prev2 = prev1;
+//			 prev1 = n3;
+//			 }
+//			 System.out.print(" "+n3);
+//	 }
+//	 	

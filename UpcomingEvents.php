@@ -110,7 +110,7 @@ Confirm_Login();
                  $sql = "SELECT * FROM upcomingevents";
                  $stmt = $ConnectingDB->query($sql);
                  while($DataRows =$stmt->fetch()){
-                    $Id =      $DataRows["event-id"];
+                    $Id =      $DataRows["eventId"];
                     $EventTitle =$DataRows["title"];
                     $EventImageone = $DataRows["eventImageone"];
                     $EventImagetwo = $DataRows["eventImagetwo"];

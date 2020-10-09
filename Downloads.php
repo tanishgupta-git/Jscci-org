@@ -107,14 +107,14 @@ Confirm_Login();
                  $sql = "SELECT * FROM downloads";
                  $stmt = $ConnectingDB->query($sql);
                  while($DataRows =$stmt->fetch()){
-                    $Id =      $DataRows["download-id"];
+                    $Id =      $DataRows["downloadId"];
                     $DownloadTitle =$DataRows["title"];
                     $Sr++;
          		?>
                 <tbody>
                 <tr>
                     <td><?php echo $Sr; ?></td>
-                     <td><?php if(strlen($DownloadTitle)>20){$DownloadTitle=substr($DownloadTitle,0,18)."..";}
+                     <td><?php if(strlen($DownloadTitle)>20){$DownloadTitle=substr($DownloadTitle,0,20)."..";}
                      echo $DownloadTitle;?></td>
                      <td><a href="EditDownload.php?id=<?php echo $Id; ?>"><span class="btn warning">Edit</span></a></td>
                     <td><a href="DeleteDownload.php?id=<?php echo $Id; ?>"><span class="btn delete">Delete</span></a></td>
