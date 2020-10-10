@@ -1,21 +1,37 @@
+<?php require_once("INCLUDES/DB.php");?>
+<?php require_once("INCLUDES/Functions.php");  ?>
+<?php require_once("INCLUDES/Sessions.php");   ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <title>Nepal Chamber of Commerce</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+<<<<<<< HEAD
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" type="text/css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" type="text/css" href="./assets/css/homepage.css">
+=======
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/homepage.css">
+>>>>>>> 01058d225ca834c269c8cbeefe4b04ed51759c2c
 </head>
 <body>
-
+ 
 <!-- navigation bar -->
     <div class="nav-menu" >
         <nav class="navbar navbar-expand-lg navbar-light">
+<<<<<<< HEAD
             <a class="navbar-brand" href="#"><img src="./assets/images/chamber-logo-1.png"></a>
+=======
+            <a class="navbar-brand" href="#"><img src="assets/images/chamber-logo-1.png"></a>
+>>>>>>> 01058d225ca834c269c8cbeefe4b04ed51759c2c
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -78,6 +94,7 @@
   
           <div class="carousel-inner" role="listbox">
   
+<<<<<<< HEAD
             <div class="carousel-item active" style="background-image: url('./assets/images/image1.jpg');">
       
             </div>
@@ -85,6 +102,15 @@
             <div class="carousel-item" style="background-image: url('./assets/images/image2.jpg');">
             </div>
             <div class="carousel-item" style="background-image: url('./assets/images/image3.jpg');">
+=======
+            <div class="carousel-item active" style="background-image: url('assets/images/image1.jpg');">
+      
+            </div>
+  
+            <div class="carousel-item" style="background-image: url('assets/images/image2.jpg');">
+            </div>
+            <div class="carousel-item" style="background-image: url('assets/images/image3.jpg');">
+>>>>>>> 01058d225ca834c269c8cbeefe4b04ed51759c2c
             </div>
   
           </div>
@@ -114,7 +140,11 @@
 
               <div class="row content">
                 <div class="col-lg-5 build_photo" data-aos="fade-right">
+<<<<<<< HEAD
                   <img src="./assets/images/build.jpg">
+=======
+                  <img src="assets/images/build.jpg">
+>>>>>>> 01058d225ca834c269c8cbeefe4b04ed51759c2c
                 </div>
                 <div class=" aboutCon col-lg-7 pt-4 pt-lg-0" data-aos="fade-left">
                   <p>
@@ -136,7 +166,11 @@
             <div class="container">
               <div class="row">
                 <div class="col-lg-4 order-lg-8 image_part">
+<<<<<<< HEAD
                   <img src="./assets/images/president.jpg">
+=======
+                  <img src="assets/images/president.jpg">
+>>>>>>> 01058d225ca834c269c8cbeefe4b04ed51759c2c
                 </div>
                 <div class="col-lg-8 order-lg-4 content_prt">
                   <h3>View of President</h3>
@@ -159,7 +193,22 @@
                     <h3 class="press-head">Press Release</h3>           
                     <div class="myTicker">
                       <ul>
+
+                        <?php 
+                        global $ConnectingDB;
+                        $sql = "SELECT  * FROM pressrelease ORDER BY pressId desc";
+                        $stmt=$ConnectingDB->query($sql);
+                        while ($DataRows=$stmt->fetch()) {
+                              $PressId    = $DataRows["pressId"];
+                              $PressTitle = $DataRows["title"];
+                              $DateTime   = $DataRows["datetime"];
+                              $PressImage = $DataRows["homePageimage"];
+                              $PressContent = $DataRows["content"];
+
+                      ?>
+
                         <li>
+<<<<<<< HEAD
                           <h6><a href="#">नेपाल चेम्बर अफकमर्सका अध्यक्ष श्री राजेश काजीश्रेष्ठ र तान्जानियाका राजदूत बाराका एचलुभान्डा बीच भेटघाट ।</a></h6>
                           <div class="press_content">
                             <div class="image-div"><img src="./assets/images/primage.jpg"></div>
@@ -211,14 +260,21 @@
                           <h6><a href="#">नेपाल चेम्बर अफकमर्सका अध्यक्ष श्री राजेश काजीश्रेष्ठ र तान्जानियाका राजदूत बाराका एचलुभान्डा बीच भेटघाट ।</a></h6>
                           <div class="press_content">
                             <div class="image-div"><img src="./assets/images/primage.jpg"></div>
+=======
+                          <h6><a href="#"><?php echo $PressTitle; ?></a></h6>
+                          <div class="press_content">
+                            <div class="image-div"><img src="UPLOAD/PRESS/<?php echo($PressImage) ?>"></div>
+>>>>>>> 01058d225ca834c269c8cbeefe4b04ed51759c2c
                             <div class="date_with_cont">
-                              <p class="date">September 20, 2020</p>
-                              <p class="brief">नेपाल चेम्बर अफकमर्सका अध्यक्षश्री राजेश काजीश्रेष्ठ र तान्जानियाका  राजदूत लुभान्डा बीच चेम्बर अफकमर्समाभेटघाटभएको छ । नेपाल र तान्जानियाबीच सन् १९७५ को जनवरीमा कूटनीतिक सम्बन्धकायमभएको हो। त्यसयता नै बहुपक्षीयफोरमहरूमानेपाल र तान्जानियालेएकअर्कालाई सहयोग गर्दै आइरहेको छ । 
-                                नेपालजस्तै तान्जानियापनि असंलग्नआन्दोलनको सदस्य राष्ट्रमा पर्छ । नेपाल र तान्जानिया संयुक्त राष्ट्रसंघको सशक्त सदस्यहो ।<span><a href="#">....Read More</a></span>
+                              <p class="date"><?php  echo $DateTime; ?></p>
+                              <p class="brief"><?php if(strlen($PressContent)>900){$PressContent=substr($PressContent,0,897);}
+                     echo $PressContent;?><span><a href="#">....Read More</a></span>
                               </p>
                             </div>
                           </div>
                         </li>
+                 <?php } ?>
+                        
                       </ul>
                     </div>
                   </div>
@@ -227,23 +283,40 @@
                     <div class="upcoming_events" >
                       <h5 class="upcoming-head">Upcoming Events</h5>
                       <div class="list-group">
-                        <a href="#" class="list-group-item"><i class="far fa-hand-point-right"></i>नेपाल चेम्बर अफकमर्सका अध्यक्ष श्री राजेश काजीश्रेष्ठ र तान्जानियाका राजदूत बाराका एचलुभान्डा बीच भेटघाट ।</a>
-                        <a href="#" class="list-group-item"><i class="far fa-hand-point-right"></i>नेपाल चेम्वर अफ कमर्सका अध्यक्ष राजेश काजी श्रेष्ठद्धारा फूडटेक उद्घाटन</a>
-                        <a href="#" class="list-group-item"><i class="far fa-hand-point-right"></i>चेम्बरले लर्ड बुद्ध एजुकेशन फउण्डेशनको सहकार्यमा छात्रवृत्ति आह्वान</a>
-                        <a href="#" class="list-group-item"><i class="far fa-hand-point-right"></i>नेपाल चेम्बर अफकमर्सका अध्यक्ष श्री राजेश काजीश्रेष्ठ र तान्जानियाका राजदूत बाराका एचलुभान्डा बीच भेटघाट ।</a>
-                        <a href="#" class="list-group-item"><i class="far fa-hand-point-right"></i>नेपाल चेम्वर अफ कमर्सका अध्यक्ष राजेश काजी श्रेष्ठद्धारा फूडटेक उद्घाटन</a>
+                        
+                         <?php 
+                        global $ConnectingDB;
+                        $sql = "SELECT  * FROM upcomingevents ORDER BY eventId desc";
+                        $stmt=$ConnectingDB->query($sql);
+                        while ($DataRows=$stmt->fetch()) {
+                              $EventId    = $DataRows["eventId"];
+                              $EventTitle = $DataRows["title"];
+                      ?>
+                    <a href="#" class="list-group-item"><i class="far fa-hand-point-right"></i> <?php echo $EventTitle; ?></a>
+                      
+                    <?php } ?>
+
                       </div>
                     </div>
+
                     <div class="downloads">
                       <h5 class="Downloads-head">Downloads</h5>
                       <div class="list-group">
-                        <a href="#" class="list-group-item"><i class="far fa-hand-point-right"></i>2017 Improving Trade Environmen</a>
-                        <a href="#" class="list-group-item"><i class="far fa-hand-point-right"></i>आपूर्ति नीति २०६५ को कार्यान्वयन योजना</a>
-                        <a href="#" class="list-group-item"><i class="far fa-hand-point-right"></i>वाणिज्य नीति २०६५ – कार्यान्वयन योजना</a>
-                        <a href="#" class="list-group-item"><i class="far fa-hand-point-right"></i>न्यूनत्तम पारिश्रमिक सम्बन्धी नेपाल सरकारबाट राजपत्रमा प्रकाशित सूचना</a>
-                        <a href="#" class="list-group-item"><i class="far fa-hand-point-right"></i>लघु, घरेलु तथा साना उद्योग विकास कोष सञ्चालन कार्यविधि २०६९</a>
+                       <?php 
+                        global $ConnectingDB;
+                        $sql = "SELECT  * FROM downloads ORDER BY downloadId desc";
+                        $stmt=$ConnectingDB->query($sql);
+                        while ($DataRows=$stmt->fetch()) {
+                              $DownloadId    = $DataRows["downloadId"];
+                              $DownloadTitle = $DataRows["title"];
+                      ?>
+                        <a href="#" class="list-group-item"><i class="far fa-hand-point-right"></i> <?php echo $DownloadTitle; ?></a>
+
+                       <?php } ?>
                       </div>
                     </div>
+
+
                   </div>
                 </div>
               </div>
@@ -266,7 +339,7 @@ footer code -->
                         <li><i class="fas fa-chevron-right"></i><a href="#">Home</a></li>
                         <li><i class="fas fa-chevron-right"></i><a href="#">About us</a></li>
                         <li><i class="fas fa-chevron-right"></i><a href="#">Commitee</a></li>
-                        <li><i class="fas fa-chevron-right"></i><a href="#">Admin Login</a></li>
+                        <li><i class="fas fa-chevron-right"></i><a href="Dashboard.php">Admin Login</a></li>
                       </ul>
                     </div>
                     <div class="col-lg-4 col-md-4 footer-contact">
@@ -299,8 +372,14 @@ footer code -->
                 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script> -->
                 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
                 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
                 <!-- <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script> -->
+<<<<<<< HEAD
                 <script type="text/javascript" src="./assets/js/jquery.easy-ticker.min.js"></script>
                 <script src="./assets/js/homepage.js"></script>
+=======
+                <script type="text/javascript" src="assets/js/jquery.easy-ticker.min.js"></script>
+                <script src="assets/js/homepage.js"></script>
+>>>>>>> 01058d225ca834c269c8cbeefe4b04ed51759c2c
 </body>
 </html>
