@@ -6,38 +6,30 @@
 <?php
        $SearchQueryParameter = $_GET["id"];
        global $ConnectingDB;
-       $sql = "SELECT * FROM pressrelease WHERE pressId='$SearchQueryParameter'";
+       $sql = "SELECT * FROM downloads WHERE downloadId='$SearchQueryParameter'";
        $stmt=$ConnectingDB->query($sql);
       while($DataRows = $stmt->fetch())
       { 
-                    $HomePageImage = $DataRows["homePageimage"];
-                    $PressImageone = $DataRows["pressImageone"];
-                    $PressImagetwo = $DataRows["pressImagetwo"];
+          $DownloadFile = $DataRows["downloadFile"];
       }
 
   if(isset($_POST["submit"])){
 
        	// Query to Delete post in db when everyting is fine
        	global $ConnectingDB;
-       $sql = "DELETE FROM pressrelease WHERE pressId='$SearchQueryParameter'";
+       $sql = "DELETE FROM downloads WHERE downloadId='$SearchQueryParameter'";
        $Execute = $ConnectingDB->query($sql);
         if($Execute)
         {
-          $Target_Path_TO_DELETE_HomePageImage = "UPLOAD/PRESS/$HomePageImage";
-          unlink($Target_Path_TO_DELETE_HomePageImage);
+          $Target_Path_TO_DELETE_DownloadFile = "UPLOAD/DOWNLOADS/$DownloadFile";
+          unlink($Target_Path_TO_DELETE_DownloadFile);
 
-          $Target_Path_TO_DELETE_PressImageone = "UPLOAD/PRESS/$PressImageone";
-          unlink($Target_Path_TO_DELETE_PressImageone);
-
-          $Target_Path_TO_DELETE_PressImagetwo = "UPLOAD/PRESS/$PressImagetwo";
-          unlink($Target_Path_TO_DELETE_PressImagetwo);
-
-        	$_SESSION["SuccessMessage"]="Press Release Deleted Successfully";
-        	Redirect_to("PressRelease.php");
+        	$_SESSION["SuccessMessage"]="Upcoming Event Deleted Successfully";
+        	Redirect_to("Downloads.php");
         }else{
 
         	$_SESSION["ErrorMessage"]="Something Went Wrong. Try Again !";
-        	Redirect_to("PressRelease.php");
+        	Redirect_to("Downloads.php");
 
         }
 
@@ -54,7 +46,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+HK&display=swap" rel="stylesheet">
        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
         <link rel="stylesheet" type="text/css" href="assets/css/adminpanel.css">
-	    <title>Delete Press Release</title>
+	    <title>Delete Downloads</title>
 </head>
 <body>
     <!-- navbar for small screen only -->
@@ -98,7 +90,7 @@
   <div class="main-area">
   <header>
    <div>
-     <p class="page-define"><i class="fa fa-edit"></i> Delete Press Release</p>
+     <p class="page-define"><i class="fa fa-edit"></i> Delete Downloads</p>
      </div>
   </header>
 <!-- end of header -->
@@ -112,8 +104,8 @@
        <div class="edit-form-container">
          <div class="form-container">
           
-     <form class="" action="DeletePressRelease.php?id=<?php echo $SearchQueryParameter; ?>" method="post" enctype="multipart/form-data">
-                 <div>Are You Sure You Want To Delete This Press Release</div>
+     <form class="" action="DeleteDownloads.php?id=<?php echo $SearchQueryParameter; ?>" method="post" enctype="multipart/form-data">
+                 <div>Are You Sure You Want To Delete This Download</div>
                      <div class="admin-action-container">
                       <a href="Dashboard.php" class="btn-lg warning"><i class="fas fa-arrow-left"></i>Back TO Dashboard</a> 
                        <button type="submit" name="submit" class="btn-lg delete"><i class="fas fa-check"></i> Delete</button>

@@ -9,52 +9,37 @@ Confirm_Login(); ?>
 
   if(isset($_POST["submit"])){
 
-     $PressTitle=$_POST["Title"];
+ 
+     $DownloadTitle= $_POST["Title"];
      // for first(homepage) image
-     $HomepageImage = $_FILES["HomepageImage"]["name"];
-     $HomeTarget = "UPLOAD/PRESS/".basename($_FILES["HomepageImage"]["name"]);
-     // for second image
-     $PressImageone = $_FILES["PressImageone"]["name"];
-     $PressTargetone = "UPLOAD/PRESS/".basename($_FILES["PressImageone"]["name"]);
-     // for third image
-     $PressImagetwo = $_FILES["PressImagetwo"]["name"];
-     $PressTargettwo = "UPLOAD/PRESS/".basename($_FILES["PressImagetwo"]["name"]);
+     $DownloadFile = $_FILES["DownloadFile"]["name"];
+     $Target = "UPLOAD/DOWNLOADS/".basename($_FILES["DownloadFile"]["name"]);
 
-     $PressContent = $_POST["Content"];
-
-
-      date_default_timezone_set("Asia/Kathmandu");
-      $CurrentTime=time();
-      $DateTime=strftime("%B-%d-%Y", $CurrentTime);
-
-
-      if(empty($PressTitle)){
+      if(empty($DownloadTitle)){
       $_SESSION["ErrorMessage"] = "Title Can't be empty";
-        Redirect_to("EditPressRelease.php");
+        Redirect_to("EditDownloads.php");
        
-       }elseif (strlen($PressTitle)<5) {  
-         $_SESSION["ErrorMessage"] = "Press title should be greater than 5 characters";
-        Redirect_to("EditPressRelease.php");
-       }elseif (strlen($PressContent)>9999) {  
-         $_SESSION["ErrorMessage"] = "Press description should be less than 10000 characters";
-        Redirect_to("EditPressRelease.php");
-       } else{
+       }elseif (strlen($DownloadTitle)<5) {  
+         $_SESSION["ErrorMessage"] = "Download title should be greater than 5 characters";
+        Redirect_to("EditDownloads.php");
+       }else{
        	
         // Query to Update post in db when everyting is fine
         global $ConnectingDB;  
-        $sql = "UPDATE pressrelease SET title='$PressTitle',datetime='$DateTime',content='$PressContent', homePageimage='$HomepageImage',pressImageone='$PressImageone',pressImagetwo='$PressImagetwo' WHERE pressId='$SearchQueryParameter'";
+        $sql = "UPDATE downloads SET title='$DownloadTitle',downloadFile='$DownloadFile'WHERE downloadId='$SearchQueryParameter'";
+        
         $Execute = $ConnectingDB->query($sql);
-        move_uploaded_file($_FILES["HomepageImage"]["tmp_name"],$HomeTarget);
-        move_uploaded_file($_FILES["PressImageone"]["tmp_name"],$PressTargetone);
-        move_uploaded_file($_FILES["PressImagetwo"]["tmp_name"],$PressTargettwo);
+        move_uploaded_file($_FILES["DownloadFile"]["tmp_name"],$Target);
+
         if($Execute)
         {
-        	$_SESSION["SuccessMessage"]="Post Updated Successfully";
-        	Redirect_to("PressRelease.php");
+        	$_SESSION["SuccessMessage"]="Download Updated Successfully";
+        	Redirect_to("Downloads.php");
         }else{
         	$_SESSION["ErrorMessage"]="Something Went Wrong. Try Again !";
-        	Redirect_to("PressRelease.php");
+        	Redirect_to("Downloads.php");
         }
+
 
        }
 } //Ending of Submit Button if-condition
@@ -71,7 +56,7 @@ Confirm_Login(); ?>
        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
          <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="assets/css/adminpanel.css">
-  <title>Edit Press Release</title>
+  <title>Edit Downloads</title>
 </head>
 <body>
 <!-- navbar for small screen only -->
@@ -114,9 +99,9 @@ Confirm_Login(); ?>
    <div class="main-area">
   <header>
 	 <div>
-     <p class="page-define"><i class="fa fa-edit"></i> Edit Press Release
+     <p class="page-define"><i class="fa fa-edit"></i> Edit Downloads
      </p>
-     <div class="alert alert-warning" role="alert">You have to upload the images again ,otherwise it will remove the existing images
+     <div class="alert alert-warning" role="alert">You have to upload the file again,otherwise it will remove the existing file
       </div>
      </div>
   </header>
@@ -129,66 +114,27 @@ Confirm_Login(); ?>
        echo SuccessMessage();
 
        global $ConnectingDB;
-       $sql = "SELECT * FROM pressrelease WHERE pressId='$SearchQueryParameter'";
+       $sql = "SELECT * FROM downloads WHERE downloadId='$SearchQueryParameter'";
        $stmt=$ConnectingDB->query($sql);
       while($DataRows = $stmt->fetch())
       { 
         $TitleToBeUpdated = $DataRows['title'];
-        $HomepageImage = $DataRows["homePageimage"];
-        $PressImageone = $DataRows["pressImageone"];
-        $PressImagetwo = $DataRows["pressImagetwo"];
-        $ContentToBeUpdated = $DataRows['content'];
+
       }
         ?>
          <!-- left side area start -->
             <div class="edit-form-container">
           <div class="form-container">
-      <form action="EditPressRelease.php?id=<?php echo $SearchQueryParameter; ?>" method="post" enctype="multipart/form-data">
+      <form action="EditDownloads.php?id=<?php echo $SearchQueryParameter; ?>" method="post" enctype="multipart/form-data">
 
                <div class="admin-input">
-                 <label for="title">Press Title:</label>
+                 <label for="title">Download Title:</label>
                   <input class="form-control" type="text" name="Title" id="title" placeholder="type title here" value="<?php echo $TitleToBeUpdated; ?>">
                 </div>
                 
-                <div>
-                  <div class="center-label">
-                  <label>Existing HomePage Image: </label>
-                  <img src="UPLOAD/PRESS/<?php echo $HomepageImage;?>" width="150px"; height="100px";>
-                  </div> 
-
                 <div class="admin-img-file">
-                 <input class="admin-img-input" type="File" name="HomepageImage" id="imageSelect1">
-                 <label for="imageSelect1" class="file-label">Select Image</label>
-                </div>
-                </div>
-
-                <div>
-                  <div class="center-label">
-                  <label>Existing PressImage One: </label>
-                  <img src="UPLOAD/PRESS/<?php echo $PressImageone;?>" width="150px"; height="100px";>
-                  </div> 
-
-                <div class="admin-img-file">
-                 <input class="admin-img-input" type="File" name="PressImageone" id="imageSelect2">
-                 <label for="imageSelect2" class="file-label">Select Image</label>
-                </div>
-                </div>
-
-                <div>
-                  <div class="center-label">
-                  <label>Existing PressImage Two: </label>
-                  <img src="UPLOAD/PRESS/<?php echo $PressImagetwo;?>" width="150px"; height="100px";>
-                  </div> 
-
-                <div class="admin-img-file">
-                 <input class="admin-img-input" type="File" name="PressImagetwo" id="imageSelect3">
-                 <label for="imageSelect3" class="file-label">Select Image</label>
-                </div>
-                </div>
-
-                <div class="admin-input">
-                   <label for="Post">Content:</label><br>
-                   <textarea name="Content" rows="8" cols="80" id="Post"><?php echo $ContentToBeUpdated; ?></textarea>
+                 <input class="admin-img-input" type="File" name="DownloadFile" id="file">
+                 <label for="file" class="file-label">Select File</label>
                 </div>
 
                     <div class="admin-action-container">
@@ -208,4 +154,4 @@ Confirm_Login(); ?>
 
 <script src="assets/js/adminpanel.js"></script>
 </body>
-</html>
+</html> 

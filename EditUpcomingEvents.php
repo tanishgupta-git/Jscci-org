@@ -9,51 +9,49 @@ Confirm_Login(); ?>
 
   if(isset($_POST["submit"])){
 
-     $PressTitle=$_POST["Title"];
+     $EventTitle= $_POST["Title"];
      // for first(homepage) image
-     $HomepageImage = $_FILES["HomepageImage"]["name"];
-     $HomeTarget = "UPLOAD/PRESS/".basename($_FILES["HomepageImage"]["name"]);
+     $EventImageone = $_FILES["EventImageone"]["name"];
+     $EventTargetone = "UPLOAD/EVENTS/".basename($_FILES["EventImageone"]["name"]);
      // for second image
-     $PressImageone = $_FILES["PressImageone"]["name"];
-     $PressTargetone = "UPLOAD/PRESS/".basename($_FILES["PressImageone"]["name"]);
+     $EventImagetwo = $_FILES["EventImagetwo"]["name"];
+     $EventTargettwo = "UPLOAD/EVENTS/".basename($_FILES["EventImagetwo"]["name"]);
      // for third image
-     $PressImagetwo = $_FILES["PressImagetwo"]["name"];
-     $PressTargettwo = "UPLOAD/PRESS/".basename($_FILES["PressImagetwo"]["name"]);
+     $EventImagethree = $_FILES["EventImagethree"]["name"];
+     $EventTargetthree = "UPLOAD/EVENTS/".basename($_FILES["EventImagethree"]["name"]);
 
-     $PressContent = $_POST["Content"];
-
-
-      date_default_timezone_set("Asia/Kathmandu");
-      $CurrentTime=time();
-      $DateTime=strftime("%B-%d-%Y", $CurrentTime);
+     $EventContent = $_POST["Content"];
 
 
-      if(empty($PressTitle)){
+
+     if(empty($EventTitle)){
       $_SESSION["ErrorMessage"] = "Title Can't be empty";
-        Redirect_to("EditPressRelease.php");
+        Redirect_to("EditUpcomingEvents.php");
        
-       }elseif (strlen($PressTitle)<5) {  
-         $_SESSION["ErrorMessage"] = "Press title should be greater than 5 characters";
-        Redirect_to("EditPressRelease.php");
-       }elseif (strlen($PressContent)>9999) {  
-         $_SESSION["ErrorMessage"] = "Press description should be less than 10000 characters";
-        Redirect_to("EditPressRelease.php");
-       } else{
+       }elseif (strlen($EventTitle)<5) {  
+         $_SESSION["ErrorMessage"] = "Event title should be greater than 5 characters";
+        Redirect_to("EditUpcomingEvents.php");
+       }elseif (strlen($EventContent)>9999) {  
+         $_SESSION["ErrorMessage"] = "Event description should be less than 10000 characters";
+        Redirect_to("EditUpcomingEvents.php");
+       }else{
        	
         // Query to Update post in db when everyting is fine
         global $ConnectingDB;  
-        $sql = "UPDATE pressrelease SET title='$PressTitle',datetime='$DateTime',content='$PressContent', homePageimage='$HomepageImage',pressImageone='$PressImageone',pressImagetwo='$PressImagetwo' WHERE pressId='$SearchQueryParameter'";
+        $sql = "UPDATE upcomingevents SET title='$EventTitle', eventImageone='$EventImageone',eventImagetwo='$EventImagetwo',eventImagethree='$EventImagethree',content='$EventContent' WHERE eventId='$SearchQueryParameter'";
+
         $Execute = $ConnectingDB->query($sql);
-        move_uploaded_file($_FILES["HomepageImage"]["tmp_name"],$HomeTarget);
-        move_uploaded_file($_FILES["PressImageone"]["tmp_name"],$PressTargetone);
-        move_uploaded_file($_FILES["PressImagetwo"]["tmp_name"],$PressTargettwo);
+        move_uploaded_file($_FILES["EventImageone"]["tmp_name"],$EventTargetone);
+        move_uploaded_file($_FILES["EventImagetwo"]["tmp_name"],$EventTargettwo);
+        move_uploaded_file($_FILES["EventImagethree"]["tmp_name"],$EventTargetthree);
+
         if($Execute)
         {
         	$_SESSION["SuccessMessage"]="Post Updated Successfully";
-        	Redirect_to("PressRelease.php");
+        	Redirect_to("UpcomingEvents.php");
         }else{
         	$_SESSION["ErrorMessage"]="Something Went Wrong. Try Again !";
-        	Redirect_to("PressRelease.php");
+        	Redirect_to("UpcomingEvents.php");
         }
 
        }
@@ -71,7 +69,7 @@ Confirm_Login(); ?>
        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
          <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="assets/css/adminpanel.css">
-  <title>Edit Press Release</title>
+  <title>Edit Upcoming Events</title>
 </head>
 <body>
 <!-- navbar for small screen only -->
@@ -114,7 +112,7 @@ Confirm_Login(); ?>
    <div class="main-area">
   <header>
 	 <div>
-     <p class="page-define"><i class="fa fa-edit"></i> Edit Press Release
+     <p class="page-define"><i class="fa fa-edit"></i> Edit Upcoming Events
      </p>
      <div class="alert alert-warning" role="alert">You have to upload the images again ,otherwise it will remove the existing images
       </div>
@@ -129,59 +127,60 @@ Confirm_Login(); ?>
        echo SuccessMessage();
 
        global $ConnectingDB;
-       $sql = "SELECT * FROM pressrelease WHERE pressId='$SearchQueryParameter'";
+       $sql = "SELECT * FROM upcomingevents WHERE eventId='$SearchQueryParameter'";
        $stmt=$ConnectingDB->query($sql);
       while($DataRows = $stmt->fetch())
       { 
-        $TitleToBeUpdated = $DataRows['title'];
-        $HomepageImage = $DataRows["homePageimage"];
-        $PressImageone = $DataRows["pressImageone"];
-        $PressImagetwo = $DataRows["pressImagetwo"];
-        $ContentToBeUpdated = $DataRows['content'];
+                    $Id =  $DataRows["eventId"];
+                    $EventTitle =$DataRows["title"];
+                    $EventImageone = $DataRows["eventImageone"];
+                    $EventImagetwo = $DataRows["eventImagetwo"];
+                    $EventImagethree = $DataRows["eventImagethree"];
+                    $ContentToBeUpdated = $DataRows['content'];
       }
         ?>
          <!-- left side area start -->
             <div class="edit-form-container">
           <div class="form-container">
-      <form action="EditPressRelease.php?id=<?php echo $SearchQueryParameter; ?>" method="post" enctype="multipart/form-data">
+      <form action="EditUpcomingEvents.php?id=<?php echo $SearchQueryParameter; ?>" method="post" enctype="multipart/form-data">
 
                <div class="admin-input">
-                 <label for="title">Press Title:</label>
-                  <input class="form-control" type="text" name="Title" id="title" placeholder="type title here" value="<?php echo $TitleToBeUpdated; ?>">
+                 <label for="title">Event Title:</label>
+                  <input class="form-control" type="text" name="Title" id="title" placeholder="type title here" value="<?php echo $EventTitle; ?>">
                 </div>
                 
                 <div>
                   <div class="center-label">
-                  <label>Existing HomePage Image: </label>
-                  <img src="UPLOAD/PRESS/<?php echo $HomepageImage;?>" width="150px"; height="100px";>
+                  <label>Existing Event Image One: </label>
+                  <img src="UPLOAD/EVENTS/<?php echo $EventImageone;?>" width="150px"; height="100px";>
                   </div> 
 
                 <div class="admin-img-file">
-                 <input class="admin-img-input" type="File" name="HomepageImage" id="imageSelect1">
+                 <input class="admin-img-input" type="File" name="EventImageone" id="imageSelect1">
                  <label for="imageSelect1" class="file-label">Select Image</label>
                 </div>
                 </div>
 
                 <div>
                   <div class="center-label">
-                  <label>Existing PressImage One: </label>
-                  <img src="UPLOAD/PRESS/<?php echo $PressImageone;?>" width="150px"; height="100px";>
+                  <label>Existing Event Image Two: </label>
+                  <img src="UPLOAD/EVENTS/<?php echo $EventImagetwo;?>" width="150px"; height="100px";>
                   </div> 
 
                 <div class="admin-img-file">
-                 <input class="admin-img-input" type="File" name="PressImageone" id="imageSelect2">
+                 <input class="admin-img-input" type="File" name="EventImagetwo" id="imageSelect2">
                  <label for="imageSelect2" class="file-label">Select Image</label>
                 </div>
                 </div>
 
                 <div>
                   <div class="center-label">
-                  <label>Existing PressImage Two: </label>
-                  <img src="UPLOAD/PRESS/<?php echo $PressImagetwo;?>" width="150px"; height="100px";>
+                  <label>Existing Event Image Three: </label>
+                  <img src="UPLOAD/EVENTS/<?php echo $EventImagethree;?>" width="150px"; height="100px";>
                   </div> 
 
                 <div class="admin-img-file">
-                 <input class="admin-img-input" type="File" name="PressImagetwo" id="imageSelect3">
+                 <input class="admin-img-input" type="File" name="EventImagethree" id="imageSelect3">
                  <label for="imageSelect3" class="file-label">Select Image</label>
                 </div>
                 </div>
@@ -205,6 +204,7 @@ Confirm_Login(); ?>
       </div>
       </div>
  <!-- end of main area -->
+
 
 <script src="assets/js/adminpanel.js"></script>
 </body>

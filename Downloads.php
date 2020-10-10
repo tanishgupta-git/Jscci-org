@@ -116,8 +116,8 @@ Confirm_Login();
                     <td><?php echo $Sr; ?></td>
                      <td><?php if(strlen($DownloadTitle)>20){$DownloadTitle=substr($DownloadTitle,0,20)."..";}
                      echo $DownloadTitle;?></td>
-                     <td><a href="EditDownload.php?id=<?php echo $Id; ?>"><span class="btn warning">Edit</span></a></td>
-                    <td><a href="DeleteDownload.php?id=<?php echo $Id; ?>"><span class="btn delete">Delete</span></a></td>
+                     <td><a href="EditDownloads.php?id=<?php echo $Id; ?>"><span class="btn warning">Edit</span></a></td>
+                    <td><a href="DeleteDownloads.php?id=<?php echo $Id; ?>"><span class="btn delete">Delete</span></a></td>
                     <td><a href="FullPost.php?id=<?php echo $Id; ?>" target="_blank"><span class="btn preview">Preview</span></a></td>
                 </tr>
             </tbody>
