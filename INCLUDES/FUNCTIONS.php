@@ -54,4 +54,17 @@ function Confirm_Login(){
 }
 // end of confirm login function
 
+
+//  function for counting the query
+
+function CountQuery($Query){
+                        global $ConnectingDB;
+                        $sql = "SELECT COUNT(*) FROM $Query";
+                        $stmt = $ConnectingDB->query($sql);
+                        $TotalRows = $stmt->fetch();
+                        $TotalFound = array_shift($TotalRows);
+                        echo $TotalFound;
+}
+// end of function for counting 
+
 ?>

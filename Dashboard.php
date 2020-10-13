@@ -21,6 +21,7 @@ Confirm_Login();
 <body>
   <!-- navbar for small screen only -->
     <div class="mobile-screen-only">
+         <a href="#" class="logo">Hello &nbsp;<?php echo  $_SESSION["NccAdminname"] ?></a>
           <button class="click-show"><i class="fas fa-bars fa-2x"></i></button>
     </div>
     <!-- end of navbar for small screen only -->
@@ -96,7 +97,7 @@ Confirm_Login();
                     <p>Press Release</p>
                     <h4>
                         <i class="fab fa-readme"></i>
-                         3
+                        <?php CountQuery('pressrelease'); ?>
                     </h4>  
                  </div>
                  
@@ -104,7 +105,7 @@ Confirm_Login();
                     <p>Upcoming Events</p>
                     <h4>
                         <i class="fas fa-folder"></i>
-                       4
+                        <?php CountQuery('upcomingevents'); ?>
                     </h4>  
                  </div>
                  
@@ -117,7 +118,7 @@ Confirm_Login();
                     <p>Admins</p>
                     <h4>
                         <i class="fas fa-users"></i>
-                       5
+                        <?php CountQuery('admins'); ?>
                     </h4>  
                  </div>
                  
@@ -125,7 +126,7 @@ Confirm_Login();
                     <p>Downloads</p>
                     <h4>
                         <i class="fas fa-comments"></i>
-                       6
+                        <?php CountQuery('downloads'); ?>
                     </h4>  
                  </div>
                  
