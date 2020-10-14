@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 html,
 body {
     margin: 0;
@@ -508,5 +511,43 @@ select {
 }
 
 /*end of code for edit type pages
-
-/*Design for login page*/
+/*Styling for login page*/
+.login-body{
+    background:#3b3b3b;
+}
+.login-container{
+    background: #f6f5f5;
+    display: flex;
+    border-radius: 5px;
+    padding: 40px 20px;
+}
+.form-wrapper label{
+    color: black;
+}
+.image-container{
+    display: flex;
+    justify-content: center;
+}
+.image-container img {
+    width: 90%;
+    height: 90%;
+}
+.form-wrapper input{
+    width: 100%;
+}
+@media screen and (max-width:650px){
+    .col-md-6{
+        padding:0;
+    }
+    .login-container{
+        justify-content: center;
+        padding: 40px;
+    }
+    .image-container{
+        width:0;
+    }
+    .form-wrapper{
+        width: 100%;
+    }
+}
+/* End of styling for login page */

@@ -46,40 +46,50 @@
            <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Poppins:wght@700&display=swap" rel="stylesheet">
              <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
          <!--responsive login page design-->
-           <link rel="stylesheet" type="text/css" href="assets/css/adminpanel.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/adminpanel.css">
             <title>Login</title>
 </head>
-<body style="background:#3b3b3b;">
+<body class="d-flex justify-content-center align-items-center login-body">
 
 <!-- Main Area Start -->
-   <section class='login'>
-       <div class="container d-flex justify-content-center">
-        <div class="col-md-6">
+   <section class='container'>
+        <div class="">
            <?php 
             echo ErrorMessage();
                echo SuccessMessage();
           ?>
          <!-- from container start -->
-          <div class="">
-                  <div class="">
-                     <h3>Admin Login</h3>
+          <div class="login-container">
 
-               <div class="">
-                  <form class="" action="Login.php" method="post">
-                      <div class="user-input"> 
-                           <input type="text" class="form-control" name="Username" id="username" placeholder="username" value="" autocomplete="off">
+            <div class="col-md-6 image-container">
+              <img src="assets/images/securelogin.svg">
+            </div>
+
+                  <div class="col-md-6 form-wrapper">
+                     <h2 class="text-center">Admin Login</h2>
+
+              
+                  <form action="Login.php" method="post">
+
+                      <div class="user-input my-3">
+                          <label for='username'>Username:</label> 
+                           <input type="text" class="form-control" name="Username" id="username" value="" autocomplete="off">
                         </div>
-                  <div class="user-input">              
-                      <input type="password" class="form-control" name="Password" id="password" placeholder="password" value="">
+                  
+                  <div class="user-input my-3">
+                      <label for='password'>Password:</label>              
+                      <input type="password" class="form-control" name="Password" id="password" value="">
                  </div>
-            <input type="submit" name="Submit" value="Login">
+                
+               <input class='btn-block mt-5 btn btn-dark mb-3' type="submit" name="Submit" value="Login">
             </form>
-           </div>
-      </div>
-      <div class="public-message">Only admins are allowed to logged in</div>
+         
+
+        <div class="text-center">Only admins are allowed to logged in</div>
+        </div>
       </div>
      </div>
-    </div>
+    
     </section>
 <!-- main area end -->
 
