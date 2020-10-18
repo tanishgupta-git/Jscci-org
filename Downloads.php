@@ -62,12 +62,12 @@ Confirm_Login();
               <p class="page-define"><i class="fas fa-blog"></i> Upcoming Events</p>
             </div>
           <div class="edit-buttongroup">
-             <div>
-              <a href="AddPressRelease.php"><i class="fas fa-edit"></i> Add Press Release
+                          <div>
+              <a href="AddPressRelease.php"><i class="fas fa-newspaper"></i> Add Press Release
               </a>
              </div>
               <div>
-              <a href="AddUpcomingEvents.php"><i class="fas fa-folder-plus"></i> Add Upcoming Events
+              <a href="AddUpcomingEvents.php"><i class="fas fa-calendar-week"></i> Add Upcoming Events
               </a>
              </div>
              <div>
@@ -76,7 +76,7 @@ Confirm_Login();
              </div>
 
              <div>
-              <a href="AddDownloads.php"><i class="fas fa-check"></i> Add New Downloads
+              <a href="AddDownloads.php"><i class="fas fa-file-download"></i> Add New Downloads
               </a>
              </div>
           </div>

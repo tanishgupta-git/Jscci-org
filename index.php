@@ -28,8 +28,6 @@
 
             <a class="navbar-brand" href="#"><img src="./assets/images/chamber-logo-1.png"></a>
 
-            <a class="navbar-brand" href="#"><img src="./assets/images/chamber-logo-1.png"></a>
-
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -139,7 +137,7 @@
 
                   <img src="./assets/images/build.jpg">
 
-                  <img src="./assets/images/build.jpg">
+    
                 </div>
                 <div class=" aboutCon col-lg-7 pt-4 pt-lg-0" data-aos="fade-left">
                   <p>
@@ -164,7 +162,7 @@
 
                   <img src="./assets/images/president.jpg">
 
-                  <img src="./assets/images/president.jpg">
+            
 
                 </div>
                 <div class="col-lg-8 order-lg-4 content_prt">

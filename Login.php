@@ -20,7 +20,6 @@
        if($Found_Account){
         $_SESSION["NccADMIN_Id"] = $Found_Account["id"];
          $_SESSION["NccAdminname"] = $Found_Account["username"];
-         $_SESSION["SuccessMessage"] = "Wellcome ".$_SESSION["FitAdminName"];
            if (isset($_SESSION["TrackingURL"])) {
          Redirect_to($_SESSION["TrackingURL"]);
         }else{

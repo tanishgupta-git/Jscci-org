@@ -29,20 +29,21 @@ Confirm_Login();
          <a href="#" class="logo">Hello &nbsp;<?php echo  $_SESSION["NccAdminname"] ?></a>
           <button class="click-hide"><i class="fas fa-times fa-2x"></i></button><br>
        <ul>  
-            <li>
+        <li>
             <a href="Dashboard.php"><i class="fas fa-cog"></i> Dashboard</a>
           </li>
+
           <li class="active">
-            <a href="Posts.php"><i class="fas fa-newspaper"></i> Press Release</a>
+            <a href="PressRelease.php"><i class="fas fa-newspaper"></i> Press Release</a>
           </li>
           <li>
-            <a href="Categories.php"><i class="fas fa-calendar-week"></i> Upcoming Events</a>
+            <a href="UpcomingEvents.php"><i class="fas fa-calendar-week"></i> Upcoming Events</a>
           </li>
           <li>
             <a href="Admins.php"><i class="fas fa-users"></i> Manage Admins</a>
           </li>
           <li>
-            <a href="Comments.php"><i class="fas fa-file-download"></i> Downloads</a>
+            <a href="Downloads.php"><i class="fas fa-file-download"></i> Downloads</a>
           </li>
           <li>
             <a href="Index.php"><i class="fas fa-blog"></i> Live Website</a>
@@ -61,12 +62,12 @@ Confirm_Login();
               <p class="page-define"><i class="fas fa-blog"></i> Press Release</p>
             </div>
           <div class="edit-buttongroup">
-             <div>
-              <a href="AddPressRelease.php"><i class="fas fa-edit"></i> Add Press Release
+                          <div>
+              <a href="AddPressRelease.php"><i class="fas fa-newspaper"></i> Add Press Release
               </a>
              </div>
               <div>
-              <a href="AddUpcomingEvents.php"><i class="fas fa-folder-plus"></i> Add Upcoming Events
+              <a href="AddUpcomingEvents.php"><i class="fas fa-calendar-week"></i> Add Upcoming Events
               </a>
              </div>
              <div>
@@ -75,7 +76,7 @@ Confirm_Login();
              </div>
 
              <div>
-              <a href="AddDownloads.php"><i class="fas fa-check"></i> Add New Downloads
+              <a href="AddDownloads.php"><i class="fas fa-file-download"></i> Add New Downloads
               </a>
              </div>
           </div>

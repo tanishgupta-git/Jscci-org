@@ -35,6 +35,7 @@ Confirm_Login();
             <li class="active">
         		<a href="Dashboard.php"><i class="fas fa-cog"></i> Dashboard</a>
         	</li>
+
         	<li>
         		<a href="PressRelease.php"><i class="fas fa-newspaper"></i> Press Release</a>
         	</li>
@@ -65,12 +66,13 @@ Confirm_Login();
             <p class="page-define"><i class="fas fa-cog"></i> Dashboard</p>
             </div>
              <div class="edit-buttongroup">
+             
              <div>
-             	<a href="AddPressRelease.php"><i class="fas fa-edit"></i> Add Press Release
+             	<a href="AddPressRelease.php"><i class="fas fa-newspaper"></i> Add Press Release
              	</a>
              </div>
               <div>
-             	<a href="AddUpcomingEvents.php"><i class="fas fa-folder-plus"></i> Add Upcoming Events
+             	<a href="AddUpcomingEvents.php"><i class="fas fa-calendar-week"></i> Add Upcoming Events
              	</a>
              </div>
              <div>
@@ -79,7 +81,7 @@ Confirm_Login();
              </div>
 
              <div>
-             	<a href="AddDownloads.php"><i class="fas fa-check"></i> Add New Downloads
+             	<a href="AddDownloads.php"><i class="fas fa-file-download"></i> Add New Downloads
              	</a>
              </div>
           </div>
@@ -95,18 +97,18 @@ Confirm_Login();
              
                 <div class="total-count">
                     <p>Press Release</p>
-                    <h4>
+                    <h1>
                         <i class="fab fa-readme"></i>
                         <?php CountQuery('pressrelease'); ?>
-                    </h4>  
+                    </h1>  
                  </div>
                  
                   <div class="total-count">
                     <p>Upcoming Events</p>
-                    <h4>
+                    <h1>
                         <i class="fas fa-folder"></i>
                         <?php CountQuery('upcomingevents'); ?>
-                    </h4>  
+                    </h1>  
                  </div>
                  
                  </div>
@@ -116,18 +118,18 @@ Confirm_Login();
                   
                 <div class="total-count">
                     <p>Admins</p>
-                    <h4>
+                    <h1>
                         <i class="fas fa-users"></i>
                         <?php CountQuery('admins'); ?>
-                    </h4>  
+                    </h1>  
                  </div>
                  
                 <div class="total-count">
                     <p>Downloads</p>
-                    <h4>
-                        <i class="fas fa-comments"></i>
+                    <h1>
+                        <i class="fas fa-file-download"></i>
                         <?php CountQuery('downloads'); ?>
-                    </h4>  
+                    </h1>  
                  </div>
                  
              </div>
