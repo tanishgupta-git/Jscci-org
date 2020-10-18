@@ -122,9 +122,9 @@ Confirm_Login();
                     <td><?php echo $Sr; ?></td>
                      <td><?php if(strlen($EventTitle)>20){$EventTitle=substr($EventTitle,0,18)."..";}
                      echo $EventTitle;?></td>
-                     <td><img src="UPLOAD/EVENTS/<?php echo $EventImageone; ?>" width="100x" height="100px"></td>
-                     <td><img src="UPLOAD/EVENTS/<?php echo $EventImagetwo; ?>" width="100x" height="100px"></td>
-                     <td><img src="UPLOAD/EVENTS/<?php echo $EventImagethree; ?>" width="100x" height="100px"></td>
+                     <td><img src="UPLOAD/EVENTS/<?php echo $EventImageone; ?>" width="100x" height="100px" alt="No Image"></td>
+                     <td><img src="UPLOAD/EVENTS/<?php echo $EventImagetwo; ?>" width="100x" height="100px" alt="No Image"></td>
+                     <td><img src="UPLOAD/EVENTS/<?php echo $EventImagethree; ?>" width="100x" height="100px" alt="No Image"></td>
                      <td><a href="EditUpcomingEvents.php?id=<?php echo $Id; ?>"><span class="btn warning">Edit</span></a></td>
                     <td><a href="DeleteUpcomingEvents.php?id=<?php echo $Id; ?>"><span class="btn delete">Delete</span></a></td>
                     <td><a href="FullPost.php?id=<?php echo $Id; ?>" target="_blank"><span class="btn preview">Preview</span></a></td>
