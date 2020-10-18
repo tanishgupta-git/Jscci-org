@@ -58,7 +58,7 @@
                      Media Room
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item" href="#">Gallary</a>
+                      <a class="dropdown-item" href="Gallary.php">Gallary</a>
                       <a class="dropdown-item" href="#">Videos</a>
                       <a class="dropdown-item" href="#">Press Release</a>
                     </div>
@@ -198,70 +198,19 @@
                               $PressImage = $DataRows["homePageimage"];
                               $PressContent = $DataRows["content"];
 
-                      ?>
-
+                      ?>      
                         <li>
 
-                          <h6><a href="#">नेपाल चेम्बर अफकमर्सका अध्यक्ष श्री राजेश काजीश्रेष्ठ र तान्जानियाका राजदूत बाराका एचलुभान्डा बीच भेटघाट ।</a></h6>
+                           <h6><a href="FullPressRelease.php?id=<?php echo $PressId; ?>"><?php echo $PressTitle; ?></a></h6>
                           <div class="press_content">
                             <div class="image-div"><img src="./assets/images/primage.jpg"></div>
-                            <div class="date_with_cont">
-                              <p class="date">September 20, 2020</p>
-                              <p class="brief">नेपाल चेम्बर अफकमर्सका अध्यक्षश्री राजेश काजीश्रेष्ठ र तान्जानियाका  राजदूत लुभान्डा बीच चेम्बर अफकमर्समाभेटघाटभएको छ । नेपाल र तान्जानियाबीच सन् १९७५ को जनवरीमा कूटनीतिक सम्बन्धकायमभएको हो। त्यसयता नै बहुपक्षीयफोरमहरूमानेपाल र तान्जानियालेएकअर्कालाई सहयोग गर्दै आइरहेको छ । 
-                                नेपालजस्तै तान्जानियापनि असंलग्नआन्दोलनको सदस्य राष्ट्रमा पर्छ । नेपाल र तान्जानिया संयुक्त राष्ट्रसंघको सशक्त सदस्यहो ।<span><a href="#">....Read More</a></span>
-                              </p>
-                            </div>
-                          </div>
-                        </li>
-                        <li>
-                          <h6><a href="#">नेपाल चेम्बर अफकमर्सका अध्यक्ष श्री राजेश काजीश्रेष्ठ र तान्जानियाका राजदूत बाराका एचलुभान्डा बीच भेटघाट ।</a></h6>
-                          <div class="press_content">
-                            <div class="image-div"><img src="./assets/images/primage.jpg"></div>
-                            <div class="date_with_cont">
-                              <p class="date">September 20, 2020</p>
-                              <p class="brief">नेपाल चेम्बर अफकमर्सका अध्यक्षश्री राजेश काजीश्रेष्ठ र तान्जानियाका  राजदूत लुभान्डा बीच चेम्बर अफकमर्समाभेटघाटभएको छ । नेपाल र तान्जानियाबीच सन् १९७५ को जनवरीमा कूटनीतिक सम्बन्धकायमभएको हो। त्यसयता नै बहुपक्षीयफोरमहरूमानेपाल र तान्जानियालेएकअर्कालाई सहयोग गर्दै आइरहेको छ । 
-                                नेपालजस्तै तान्जानियापनि असंलग्नआन्दोलनको सदस्य राष्ट्रमा पर्छ । नेपाल र तान्जानिया संयुक्त राष्ट्रसंघको सशक्त सदस्यहो ।<span><a href="#">....Read More</a></span>
-                              </p>
-                            </div>
-                          </div>
-                        </li>
-                        <li>
-                          <h6><a href="#">नेपाल चेम्बर अफकमर्सका अध्यक्ष श्री राजेश काजीश्रेष्ठ र तान्जानियाका राजदूत बाराका एचलुभान्डा बीच भेटघाट ।</a></h6>
-                          <div class="press_content">
-                            <div class="image-div"><img src="./assets/images/primage.jpg"></div>
-                            <div class="date_with_cont">
-                              <p class="date">September 20, 2020</p>
-                              <p class="brief">नेपाल चेम्बर अफकमर्सका अध्यक्षश्री राजेश काजीश्रेष्ठ र तान्जानियाका  राजदूत लुभान्डा बीच चेम्बर अफकमर्समाभेटघाटभएको छ । नेपाल र तान्जानियाबीच सन् १९७५ को जनवरीमा कूटनीतिक सम्बन्धकायमभएको हो। त्यसयता नै बहुपक्षीयफोरमहरूमानेपाल र तान्जानियालेएकअर्कालाई सहयोग गर्दै आइरहेको छ । 
-                                नेपालजस्तै तान्जानियापनि असंलग्नआन्दोलनको सदस्य राष्ट्रमा पर्छ । नेपाल र तान्जानिया संयुक्त राष्ट्रसंघको सशक्त सदस्यहो ।<span><a href="#">....Read More</a></span>
-                              </p>
-                            </div>
-                          </div>
-                        </li>
-                        <li>
-                          <h6><a href="#">नेपाल चेम्बर अफकमर्सका अध्यक्ष श्री राजेश काजीश्रेष्ठ र तान्जानियाका राजदूत बाराका एचलुभान्डा बीच भेटघाट ।</a></h6>
-                          <div class="press_content">
-                            <div class="image-div"><img src=""></div>
-                            <div class="date_with_cont">
-                              <p class="date">September 20, 2020</p>
-                              <p class="brief">नेपाल चेम्बर अफकमर्सका अध्यक्षश्री राजेश काजीश्रेष्ठ र तान्जानियाका  राजदूत लुभान्डा बीच चेम्बर अफकमर्समाभेटघाटभएको छ । नेपाल र तान्जानियाबीच सन् १९७५ को जनवरीमा कूटनीतिक सम्बन्धकायमभएको हो। त्यसयता नै बहुपक्षीयफोरमहरूमानेपाल र तान्जानियालेएकअर्कालाई सहयोग गर्दै आइरहेको छ । 
-                                नेपालजस्तै तान्जानियापनि असंलग्नआन्दोलनको सदस्य राष्ट्रमा पर्छ । नेपाल र तान्जानिया संयुक्त राष्ट्रसंघको सशक्त सदस्यहो ।<span><a href="#">....Read More</a></span>
-                              </p>
-                            </div>
-                          </div>
-                        </li>
-                        <li>
-                          <h6><a href="#">नेपाल चेम्बर अफकमर्सका अध्यक्ष श्री राजेश काजीश्रेष्ठ र तान्जानियाका राजदूत बाराका एचलुभान्डा बीच भेटघाट ।</a></h6>
-                          <div class="press_content">
-                            <div class="image-div"><img src="./assets/images/primage.jpg"></div>
-
-                          <h6><a href="#"><?php echo $PressTitle; ?></a></h6>
                           <div class="press_content">
                             <div class="image-div"><img src="UPLOAD/PRESS/<?php echo($PressImage) ?>"></div>
 
                             <div class="date_with_cont">
                               <p class="date"><?php  echo $DateTime; ?></p>
                               <p class="brief"><?php if(strlen($PressContent)>900){$PressContent=substr($PressContent,0,897);}
-                     echo $PressContent;?><span><a href="#">....Read More</a></span>
+                     echo $PressContent;?><span><a href="FullPressRelease.php?id=<?php echo $PressId; ?>">....Read More</a></span>
                               </p>
                             </div>
                           </div>
@@ -285,7 +234,7 @@
                               $EventId    = $DataRows["eventId"];
                               $EventTitle = $DataRows["title"];
                       ?>
-                    <a href="#" class="list-group-item"><i class="far fa-hand-point-right"></i> <?php echo $EventTitle; ?></a>
+                    <a href="FullUpcomingEvent.php?id=<?php echo $EventId; ?>" class="list-group-item"><i class="far fa-hand-point-right"></i> <?php echo $EventTitle; ?></a>
                       
                     <?php } ?>
 

@@ -130,7 +130,7 @@ Confirm_Login();
                      <td><img src="UPLOAD/PRESS/<?php echo $PressImagetwo; ?>" width="100x" height="100px" alt="No Image"></td>
                      <td><a href="EditPressRelease.php?id=<?php echo $Id; ?>"><span class="btn warning">Edit</span></a></td>
                     <td><a href="DeletePressRelease.php?id=<?php echo $Id; ?>"><span class="btn delete">Delete</span></a></td>
-                    <td><a href="FullPost.php?id=<?php echo $Id; ?>" target="_blank"><span class="btn preview">Preview</span></a></td>
+                    <td><a href="FullPressRelease.php?id=<?php echo $Id; ?>" target="_blank"><span class="btn preview">Preview</span></a></td>
                 </tr>
             </tbody>
             <?php } ?>

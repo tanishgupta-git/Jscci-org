@@ -128,7 +128,7 @@ Confirm_Login();
                      <td><img src="UPLOAD/EVENTS/<?php echo $EventImagethree; ?>" width="100x" height="100px" alt="No Image"></td>
                      <td><a href="EditUpcomingEvents.php?id=<?php echo $Id; ?>"><span class="btn warning">Edit</span></a></td>
                     <td><a href="DeleteUpcomingEvents.php?id=<?php echo $Id; ?>"><span class="btn delete">Delete</span></a></td>
-                    <td><a href="FullPost.php?id=<?php echo $Id; ?>" target="_blank"><span class="btn preview">Preview</span></a></td>
+                    <td><a href="FullUpcomingEvent.php?id=<?php echo $Id; ?>" target="_blank"><span class="btn preview">Preview</span></a></td>
                 </tr>
             </tbody>
             <?php } ?>

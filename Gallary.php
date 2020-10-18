@@ -1,3 +1,7 @@
+<?php require_once("INCLUDES/DB.php");?>
+<?php require_once("INCLUDES/Functions.php");  ?>
+<?php require_once("INCLUDES/Sessions.php");   ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -83,120 +87,113 @@
 
 
     <h1> Gallary </h1><hr>
+
     <div id="gallery" class="container-fluid">
+<!-- query for all upcoming events images -->
+      <?php
+                 global $ConnectingDB;
+                 $sql = "SELECT * FROM upcomingevents";
+                 $stmt = $ConnectingDB->query($sql);
+                 while($DataRows =$stmt->fetch()){
+                    $Id =      $DataRows["eventId"];
+                    $EventTitle =$DataRows["title"];
+                    $EventImageone = $DataRows["eventImageone"];
+                    $EventImagetwo = $DataRows["eventImagetwo"];
+                    $EventImagethree = $DataRows["eventImagethree"];
+            ?>
+       
+      <?php if(!empty($EventImageone)) { ?>
       <div class="parentCard content">
-        <img src="./assets/images/dynamic1-min.jpg" class="card img-responsive">
+        <img src="UPLOAD/EVENTS/<?php echo($EventImageone) ?>" class="card img-responsive">
         <div class="content-overlay"></div>
         <div class="content-details fadeIn-bottom">
-          <p class="content-text">This is a short description and i want this to be famous and thats it like just go a head 
-            and do your work whatever you llike
-          </p>
+          <p class="content-text"><?php echo $EventTitle ?></p>
           <button type="button" class="btn btn-outline-primary btn-sm"><a href="#">Know More</a></button>
         </div>
       </div> 
-      
-      <div class="parentCard content"> 
-        <img src="http://delbaz.persiangig.com/image/Portraits/Matt-Sayles-portrait-shot-in-Beverly-HillsNov-8-2008-kristen-stewart-2823602-1845-2560.jpg" class="card img-responsive">
-        <div class="content-overlay"></div>
-        <div class="content-details fadeIn-bottom">
-          <p class="content-text">This is a short description and i want this to be famous and thats it like just go a head 
-            and do your work whatever you llike
-          </p>
-          <button type="button" class="btn btn-outline-primary btn-sm"><a href="#">Know More</a></button>
-        </div>
-      </div>
+      <?php } ?>
 
-      <div class="parentCard content">  
-        <img src="https://picsum.photos/300" class="card img-responsive">
-        <div class="content-overlay"></div>
-        <div class="content-details fadeIn-bottom">
-          <p class="content-text">This is a short description and i want this to be famous and thats it like just go a head 
-            and do your work whatever you llike
-          </p>
-          <button type="button" class="btn btn-outline-primary btn-sm"><a href="#">Know More</a></button>
-        </div>
-      </div>
-
-
+            <?php if(!empty($EventImagetwo)) { ?>
       <div class="parentCard content">
-        <img src="https://picsum.photos/400" class="card img-responsive">
+        <img src="UPLOAD/EVENTS/<?php echo($EventImagetwo) ?>" class="card img-responsive">
         <div class="content-overlay"></div>
         <div class="content-details fadeIn-bottom">
-          <p class="content-text">This is a short description and i want this to be famous and thats it like just go a head 
-            and do your work whatever you llike
-          </p>
+          <p class="content-text"><?php echo $EventTitle ?></p>
           <button type="button" class="btn btn-outline-primary btn-sm"><a href="#">Know More</a></button>
         </div>
-      </div>
+      </div> 
+      <?php } ?>
 
 
+            <?php if(!empty($EventImagethree)) { ?>
       <div class="parentCard content">
-        <img src="https://picsum.photos/600" class="card img-responsive">
+        <img src="UPLOAD/EVENTS/<?php echo($EventImagethree) ?>" class="card img-responsive">
         <div class="content-overlay"></div>
         <div class="content-details fadeIn-bottom">
-          <p class="content-text">This is a short description and i want this to be famous and thats it like just go a head 
-            and do your work whatever you llike
-          </p>
+          <p class="content-text"><?php echo $EventTitle ?></p>
           <button type="button" class="btn btn-outline-primary btn-sm"><a href="#">Know More</a></button>
         </div>
-      </div>
+      </div> 
+      <?php } ?>
 
 
+        <?php } ?>
+
+     <!-- query for all press release images -->
+     <?php
+                 global $ConnectingDB;
+                 $sql = "SELECT * FROM pressrelease";
+                 $stmt = $ConnectingDB->query($sql);
+                 while($DataRows =$stmt->fetch()){
+  
+                    $PressTitle =$DataRows["title"];
+                    $HomePageImage = $DataRows["homePageimage"];
+                    $PressImageone = $DataRows["pressImageone"];
+                    $PressImagetwo = $DataRows["pressImagetwo"];
+  
+            ?>
+
+          
+      <?php if(!empty($HomePageImage)) { ?>
       <div class="parentCard content">
-        <img src="https://picsum.photos/650" class="card img-responsive">
+        <img src="UPLOAD/PRESS/<?php echo($HomePageImage) ?>" class="card img-responsive">
         <div class="content-overlay"></div>
         <div class="content-details fadeIn-bottom">
-          <p class="content-text">This is a short description and i want this to be famous and thats it like just go a head 
-            and do your work whatever you llike
-          </p>
+          <p class="content-text"><?php echo $PressTitle ?></p>
           <button type="button" class="btn btn-outline-primary btn-sm"><a href="#">Know More</a></button>
         </div>
-      </div>
+      </div> 
+      <?php } ?>
 
-
+            <?php if(!empty($PressImageone)) { ?>
       <div class="parentCard content">
-        <img src="https://picsum.photos/550" class="card img-responsive">
+        <img src="UPLOAD/PRESS/<?php echo($PressImageone) ?>" class="card img-responsive">
         <div class="content-overlay"></div>
         <div class="content-details fadeIn-bottom">
-          <p class="content-text">This is a short description and i want this to be famous and thats it like just go a head 
-            and do your work whatever you llike
-          </p>
+          <p class="content-text"><?php echo $PressTitle ?></p>
           <button type="button" class="btn btn-outline-primary btn-sm"><a href="#">Know More</a></button>
         </div>
-      </div>
+      </div> 
+      <?php } ?>
 
 
+            <?php if(!empty($PressImagetwo)) { ?>
       <div class="parentCard content">
-        <img src="https://picsum.photos/410" class="card img-responsive">
+        <img src="UPLOAD/PRESS/<?php echo($PressImagetwo) ?>" class="card img-responsive">
         <div class="content-overlay"></div>
         <div class="content-details fadeIn-bottom">
-          <p class="content-text">This is a short description and i want this to be famous and thats it like just go a head 
-            and do your work whatever you llike
-          </p>
+          <p class="content-text"><?php echo $PressTitle ?></p>
           <button type="button" class="btn btn-outline-primary btn-sm"><a href="#">Know More</a></button>
         </div>
-      </div>
+      </div> 
+      <?php } ?>
 
 
-<!-- 
-        <img src="./assets/images/dynamic1-min.jpg" class="card img-responsive">
-        <img src="" class="card img-responsive">
-        <img src="https://picsum.photos/300" class="card img-responsive">
-        <img src="https://picsum.photos/400" class="card img-responsive">
-        <img src="https://picsum.photos/600" class="card img-responsive">
-        <img src="http://hd.wallpaperswide.com/thumbs/megan_fox_portrait-t2.jpg" class="card img-responsive">
-        <img src="https://picsum.photos/300/500" class="card img-responsive">
-        <img src="https://picsum.photos/650" class="card img-responsive">
-        <img src="https://picsum.photos/550" class="card img-responsive">
-        <img src="https://picsum.photos/410" class="card img-responsive">
-        <img src="https://picsum.photos/420" class="card img-responsive">
-        <img src="https://picsum.photos/430" class="card img-responsive">
-        <img src="./assets/images/dynamic1-min.jpg" class="card img-responsive"> -->
-    </div>
+          <?php } ?>
+
+        </div>
     <!-- 
 footer code -->
-
-
 
 
 
