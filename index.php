@@ -25,9 +25,6 @@
 <!-- navigation bar -->
     <div class="nav-menu" >
         <nav class="navbar navbar-expand-lg navbar-light">
-
-            <a class="navbar-brand" href="#"><img src="./assets/images/chamber-logo-1.png"></a>
-
             <a class="navbar-brand" href="#"><img src="./assets/images/chamber-logo-1.png"></a>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -136,9 +133,6 @@
 
               <div class="row content">
                 <div class="col-lg-5 build_photo" data-aos="fade-right">
-
-                  <img src="./assets/images/build.jpg">
-
                   <img src="./assets/images/build.jpg">
                 </div>
                 <div class=" aboutCon col-lg-7 pt-4 pt-lg-0" data-aos="fade-left">
@@ -161,8 +155,6 @@
             <div class="container">
               <div class="row">
                 <div class="col-lg-4 order-lg-8 image_part">
-
-                  <img src="./assets/images/president.jpg">
 
                   <img src="./assets/images/president.jpg">
 
@@ -201,7 +193,6 @@
                               $PressContent = $DataRows["content"];
 
                       ?>
-
                         <li>
 
                           <h6><a href="#">नेपाल चेम्बर अफकमर्सका अध्यक्ष श्री राजेश काजीश्रेष्ठ र तान्जानियाका राजदूत बाराका एचलुभान्डा बीच भेटघाट ।</a></h6>
