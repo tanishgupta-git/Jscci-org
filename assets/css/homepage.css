@@ -39,10 +39,13 @@ body{
 {
     font-size: 0.9em;
 }
+.navbar-brand img{
+  width: 200px;
+}
 .dropdown-menu{
     border-style: none;
     background-color: #f2f2f2;
-    top: 170%;
+    top: 167%;
 }
 .carousel-inner img {
     width: 100%;
