@@ -3,7 +3,6 @@
 <?php require_once("INCLUDES/Sessions.php");  ?>
 <?php $SearchQueryParameter =$_GET["id"]; ?>
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
