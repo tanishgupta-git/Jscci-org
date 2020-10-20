@@ -73,17 +73,18 @@ Confirm_Login(); ?>
             <li>
             <a href="Dashboard.php"><i class="fas fa-cog"></i> Dashboard</a>
           </li>
-          <li class="active">
-            <a href="Posts.php"><i class="fas fa-newspaper"></i> Press Release</a>
+
+          <li>
+            <a href="PressRelease.php"><i class="fas fa-newspaper"></i> Press Release</a>
           </li>
           <li>
-            <a href="Categories.php"><i class="fas fa-calendar-week"></i> Upcoming Events</a>
+            <a href="UpcomingEvents.php"><i class="fas fa-calendar-week"></i> Upcoming Events</a>
           </li>
           <li>
             <a href="Admins.php"><i class="fas fa-users"></i> Manage Admins</a>
           </li>
           <li>
-            <a href="Comments.php"><i class="fas fa-file-download"></i> Downloads</a>
+            <a href="Downloads.php"><i class="fas fa-file-download"></i> Downloads</a>
           </li>
           <li>
             <a href="Index.php"><i class="fas fa-blog"></i> Live Website</a>
@@ -101,8 +102,10 @@ Confirm_Login(); ?>
 	 <div>
      <p class="page-define"><i class="fa fa-edit"></i> Edit Downloads
      </p>
-     <div class="alert alert-warning" role="alert">You have to upload the file again,otherwise it will remove the existing file
+     <div class="alert-parent">
+     <div class="alert alert-info" role="alert">You have to upload the file again,otherwise it will remove the existing file
       </div>
+    </div>
      </div>
   </header>
 <!-- end of header -->
@@ -129,7 +132,7 @@ Confirm_Login(); ?>
 
                <div class="admin-input">
                  <label for="title">Download Title:</label>
-                  <input class="form-control" type="text" name="Title" id="title" placeholder="type title here" value="<?php echo $TitleToBeUpdated; ?>">
+                  <input type="text" name="Title" id="title" placeholder="type title here" value="<?php echo $TitleToBeUpdated; ?>">
                 </div>
                 
                 <div class="admin-img-file">
@@ -138,8 +141,7 @@ Confirm_Login(); ?>
                 </div>
 
                     <div class="admin-action-container">
-                        <a href="Dashboard.php" class="btn-lg warning"><i class="fas fa-arrow-left"></i>Back TO Dashboard</a>	
-
+                          <a href="Dashboard.php" class="btn-lg warning"><i class="fas fa-arrow-left"></i> Back To Dashboard</a> 
   	                     <button type="submit" name="submit" class="btn-lg success"><i class="fas fa-check"></i> Publish</button>
                     </div>
 

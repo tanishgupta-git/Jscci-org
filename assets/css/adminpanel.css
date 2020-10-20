@@ -61,6 +61,7 @@ li a{
     cursor: pointer;
     font-family: 'Noto Sans HK', sans-serif;
     color: #fff;
+    text-decoration: none;
     font-size: 1rem;
     padding: 1.25rem 1.5625rem;
 }
@@ -135,7 +136,7 @@ li:hover,
 
 .total-count h1{
     margin-top: 0.3125rem;
-    color: #1c2731;
+    color: #F7C30F;
     font-size: 2.4rem;
 }
 
@@ -185,7 +186,7 @@ button i {
 .alert-success {
     background: rgba(31, 122, 31, 0.42);
     border: 1px solid #2eb82e;
-    color: #85e085;
+    color: #155115;
 }
 
 .alert-danger {
