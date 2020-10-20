@@ -108,7 +108,7 @@
         <div class="content-overlay"></div>
         <div class="content-details fadeIn-bottom">
           <p class="content-text"><?php echo $EventTitle ?></p>
-          <button type="button" class="btn btn-outline-primary btn-sm"><a href="#">Know More</a></button>
+          <button type="button" class="btn btn-outline-primary btn-sm"><a href="FullUpcomingEvent.php?id=<?php echo $Id; ?>">Know More</a></button>
         </div>
       </div> 
       <?php } ?>
@@ -119,7 +119,7 @@
         <div class="content-overlay"></div>
         <div class="content-details fadeIn-bottom">
           <p class="content-text"><?php echo $EventTitle ?></p>
-          <button type="button" class="btn btn-outline-primary btn-sm"><a href="#">Know More</a></button>
+          <button type="button" class="btn btn-outline-primary btn-sm"><a href="FullUpcomingEvent.php?id=<?php echo $Id; ?>">Know More</a></button>
         </div>
       </div> 
       <?php } ?>
@@ -131,7 +131,7 @@
         <div class="content-overlay"></div>
         <div class="content-details fadeIn-bottom">
           <p class="content-text"><?php echo $EventTitle ?></p>
-          <button type="button" class="btn btn-outline-primary btn-sm"><a href="#">Know More</a></button>
+          <button type="button" class="btn btn-outline-primary btn-sm"><a href="FullUpcomingEvent.php?id=<?php echo $Id; ?>">Know More</a></button>
         </div>
       </div> 
       <?php } ?>
@@ -145,7 +145,7 @@
                  $sql = "SELECT * FROM pressrelease";
                  $stmt = $ConnectingDB->query($sql);
                  while($DataRows =$stmt->fetch()){
-  
+                    $Id  = $DataRows["pressId"];
                     $PressTitle =$DataRows["title"];
                     $HomePageImage = $DataRows["homePageimage"];
                     $PressImageone = $DataRows["pressImageone"];
@@ -160,7 +160,7 @@
         <div class="content-overlay"></div>
         <div class="content-details fadeIn-bottom">
           <p class="content-text"><?php echo $PressTitle ?></p>
-          <button type="button" class="btn btn-outline-primary btn-sm"><a href="#">Know More</a></button>
+          <button type="button" class="btn btn-outline-primary btn-sm"><a href="FullPressRelease.php?id=<?php echo $Id; ?>">Know More</a></button>
         </div>
       </div> 
       <?php } ?>
@@ -171,7 +171,7 @@
         <div class="content-overlay"></div>
         <div class="content-details fadeIn-bottom">
           <p class="content-text"><?php echo $PressTitle ?></p>
-          <button type="button" class="btn btn-outline-primary btn-sm"><a href="#">Know More</a></button>
+          <button type="button" class="btn btn-outline-primary btn-sm"><a href="FullPressRelease.php?id=<?php echo $Id; ?>">Know More</a></button>
         </div>
       </div> 
       <?php } ?>
@@ -183,7 +183,7 @@
         <div class="content-overlay"></div>
         <div class="content-details fadeIn-bottom">
           <p class="content-text"><?php echo $PressTitle ?></p>
-          <button type="button" class="btn btn-outline-primary btn-sm"><a href="#">Know More</a></button>
+          <button type="button" class="btn btn-outline-primary btn-sm"><a href="FullPressRelease.php?id=<?php echo $Id; ?>">Know More</a></button>
         </div>
       </div> 
       <?php } ?>

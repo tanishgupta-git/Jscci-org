@@ -249,8 +249,9 @@
                         while ($DataRows=$stmt->fetch()) {
                               $DownloadId    = $DataRows["downloadId"];
                               $DownloadTitle = $DataRows["title"];
+                              $DownloadFile = $DataRows['downloadFile'];
                       ?>
-                        <a href="#" class="list-group-item"><i class="far fa-hand-point-right"></i> <?php echo $DownloadTitle; ?></a>
+                        <a href="UPLOAD/DOWNLOADS/<?php echo $DownloadFile ?>" class="list-group-item"><i class="far fa-hand-point-right"></i> <?php echo $DownloadTitle; ?></a>
 
                        <?php } ?>
                       </div>

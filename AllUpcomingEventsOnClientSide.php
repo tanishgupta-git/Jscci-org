@@ -89,35 +89,30 @@
 
 
     <div class="pr-card-parent">
-
-
-                        <?php 
-                        global $ConnectingDB;
-                        $sql = "SELECT  * FROM pressrelease ORDER BY pressId desc";
-                        $stmt=$ConnectingDB->query($sql);
-                        while ($DataRows=$stmt->fetch()) {
-                              $PressId    = $DataRows["pressId"];
-                              $PressTitle = $DataRows["title"];
-                              $DateTime   = $DataRows["datetime"];
-                              $PressImage = $DataRows["homePageimage"];
-                              $PressContent = $DataRows["content"];
-
-                      ?>   
-
-        <div class="pr-card container my-4">
-            <a href="FullPressRelease.php?id=<?php echo $PressId; ?>"><?php echo $PressTitle; ?></a>
-            <div class="pr-date-part"><i class="fas fa-calendar-alt"></i>Posted on 
-                <span class="pr-card-date"><?php  echo $DateTime; ?></span>
-            </div>
+                        
+                        <?php
+                 global $ConnectingDB;
+                
+                 $sql = "SELECT * FROM upcomingevents ORDER BY eventId desc";
+                 $stmt = $ConnectingDB->query($sql);
+                 while($DataRows =$stmt->fetch()){
+                    $EventId =      $DataRows["eventId"];
+                    $EventTitle =$DataRows["title"];
+                    $EventImageone = $DataRows["eventImageone"];
+                    $EventContent = $DataRows["content"];
+                  
+                ?>
+        <div class="pr-card container my-2">
+            <a href="FullUpcomingEvent.php?id=<?php echo $EventId; ?>"><?php echo $EventTitle; ?></a>
             <div class="row">
                 <div class="col-lg-4 pr-card-image-container">
-                  <img class="pr-card-image" src="UPLOAD/PRESS/<?php echo($PressImage) ?>" alt="">
+                  <img class="pr-card-image" src="UPLOAD/EVENTS/<?php echo($EventImageone) ?>" alt="">
                 </div>
                 <div class="col-lg-8 pr-card-content-container">
             
-                    <p class="pr-card-content"><?php if(strlen($PressContent)>900){$PressContent=substr($PressContent,0,897);}
-                     echo $PressContent;?></p>
-                     <button type="button" class="btn btn-outline-primary"><a href="FullPressRelease.php?id=<?php echo $PressId; ?>">Know More</a></button>
+                    <p class="pr-card-content"><?php if(strlen($EventContent)>900){$EventContent=substr($EventContent,0,897);}
+                     echo $EventContent;?></p>
+                     <button type="button" class="btn btn-outline-primary"><a href="FullUpcomingEvent.php?id=<?php echo $EventId; ?>">Know More</a></button>
                 </div>
             </div>
         </div>

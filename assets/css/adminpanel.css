@@ -133,9 +133,9 @@ li:hover,
     margin: 1.5625rem 0 0.3125rem 0;
 }
 
-h1{
+.total-count h1{
     margin-top: 0.3125rem;
-    color: #F7C30F;
+    color: #1c2731;
     font-size: 2.4rem;
 }
 
@@ -165,6 +165,10 @@ button i {
 }
 
 /*session alert styling*/
+.alert-parent{
+    display: flex;
+    justify-content: center;
+}
 .alert {
     border-radius: 4px;
     width: 90%;

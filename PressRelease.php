@@ -124,7 +124,7 @@ Confirm_Login();
                     <td><?php echo $Sr; ?></td>
                      <td><?php if(strlen($PressTitle)>20){$PressTitle=substr($PressTitle,0,18)."..";}
                      echo $PressTitle;?></td>
-                        <td><?php echo $DateTime ?></td>
+                     <td><?php echo $DateTime ?></td>
                      <td><img src="UPLOAD/PRESS/<?php echo $HomePageImage; ?>" width="100x" height="100px" alt="No Image"></td>
                      <td><img src="UPLOAD/PRESS/<?php echo $PressImageone; ?>" width="100x" height="100px" alt="No Image"></td>
                      <td><img src="UPLOAD/PRESS/<?php echo $PressImagetwo; ?>" width="100x" height="100px" alt="No Image"></td>
