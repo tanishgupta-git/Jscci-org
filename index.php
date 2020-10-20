@@ -203,8 +203,6 @@
 
                            <h6><a href="FullPressRelease.php?id=<?php echo $PressId; ?>"><?php echo $PressTitle; ?></a></h6>
                           <div class="press_content">
-                            <div class="image-div"><img src="./assets/images/primage.jpg"></div>
-                          <div class="press_content">
                             <div class="image-div"><img src="UPLOAD/PRESS/<?php echo($PressImage) ?>"></div>
 
                             <div class="date_with_cont">
