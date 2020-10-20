@@ -192,8 +192,8 @@
         <div class="col-lg-4 col-md-4 footer-links">
           <h5>Useful Links</h5>
           <ul>
-            <li><i class="fas fa-chevron-right"></i><a href="#">Home</a></li>
-            <li><i class="fas fa-chevron-right"></i><a href="#">About us</a></li>
+            <li><i class="fas fa-chevron-right"></i><a href="index.php">Home</a></li>
+            <li><i class="fas fa-chevron-right"></i><a href="AboutUs.php">About us</a></li>
             <li><i class="fas fa-chevron-right"></i><a href="#">Commitee</a></li>
             <li><i class="fas fa-chevron-right"></i><a href="Dashboard.php">Admin Login</a></li>
           </ul>
@@ -210,10 +210,10 @@
         </div>
         <div class="col-lg-4 col-md-4 text-center center-block">
           <h5>Connect with us</h5>
-          <a href="https://www.facebook.com/bootsnipp"><i id="social-fb" class="fab fa-facebook-square fa-3x social"></i></a>
-          <a href="https://twitter.com/bootsnipp"><i id="social-tw" class="fab fa-twitter-square fa-3x social"></i></a>
-          <a href="https://plus.google.com/+Bootsnipp-page"><i id="social-gp" class="fab fa-google-plus-square fa-3x social"></i></a>
-          <a href="mailto:#"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
+          <a href=""><i id="social-fb" class="fab fa-facebook-square fa-3x social"></i></a>
+          <a href=""><i id="social-tw" class="fab fa-twitter-square fa-3x social"></i></a>
+          <a href=""><i id="social-gp" class="fab fa-google-plus-square fa-3x social"></i></a>
+          <a href=""><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
        </div>
       </div>
 

@@ -17,29 +17,29 @@
 </head>
 <body>
     <!-- navigation bar -->
-    <div class="nav-menu" >
+    <div class="nav-menu">
         <nav class="navbar navbar-expand-lg navbar-light">
 
-            <a class="navbar-brand" href="#"><img src="./assets/images/chamber-logo-1.png"></a>
-
-
+            <a class="navbar-brand" href="./index.php"><img src="./assets/images/chamber-logo-3.png"> </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
           
             <div class="collapse navbar-collapse " id="navbarTogglerDemo02">
               <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-                <li class="nav-item active">
-                  <a class="nav-link kam" href="#">Home <span class="sr-only">(current)</span></a>
+                <li class="nav-item">
+                  <a class="nav-link kam" href="./index.php">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="aboutUs.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                    About us 
                   </a>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Introduction</a>
-                    <a class="dropdown-item" href="aboutUs.html#aboutUsHistory">History</a>
-                    <a class="dropdown-item" href="#">Vision</a>
+                    <a class="dropdown-item" href="./AboutUs.php#aboutUsIntroToNCC">Introduction</a>
+                    <a class="dropdown-item" href="./AboutUs.php#aboutUsVision">Vision</a>
+                    <a class="dropdown-item" href="./AboutUs.php#aboutUsMission">Mision</a>
+                    <a class="dropdown-item" href="./AboutUs.php#aboutUsHistory">History</a>
+                    <a class="dropdown-item" href="./AboutUs.php#aboutUsObjectives">Objectives</a>
                   </div>
                 </li>
                   <li class="nav-item ">
@@ -50,27 +50,26 @@
                      Member 
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item" href="#">Action</a>
-                      <a class="dropdown-item" href="#">Another action</a>
-                      <a class="dropdown-item" href="#">Something else here</a>
+                      <a class="dropdown-item" href="#">Executive Members</a>
+                      <a class="dropdown-item" href="#">Membership</a>
                     </div>
                   </li>
                   <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle active" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                      Media Room
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item" href="#">Gallary</a>
+                      <a class="dropdown-item" href="./Gallary.php">Gallary</a>
                       <a class="dropdown-item" href="#">Videos</a>
-                      <a class="dropdown-item" href="#">Press Release</a>
+                      <a class="dropdown-item" href="./AllPressReleasesOnClientSide.php">Press Release</a>
                     </div>
                   </li>
                   <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                     News & Event
+                    <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     News &Events
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item" href="#">Upcoming</a>
+                      <a class="dropdown-item" href="AllUpcomingEventsOnClientSide.php">Upcoming Events & news</a>
                     </div>
                   </li>
                 <li class="nav-item">
@@ -134,8 +133,8 @@
         <div class="col-lg-4 col-md-4 footer-links">
           <h5>Useful Links</h5>
           <ul>
-            <li><i class="fas fa-chevron-right"></i><a href="#">Home</a></li>
-            <li><i class="fas fa-chevron-right"></i><a href="#">About us</a></li>
+            <li><i class="fas fa-chevron-right"></i><a href="index.php">Home</a></li>
+            <li><i class="fas fa-chevron-right"></i><a href="AboutUs.php">About us</a></li>
             <li><i class="fas fa-chevron-right"></i><a href="#">Commitee</a></li>
             <li><i class="fas fa-chevron-right"></i><a href="Dashboard.php">Admin Login</a></li>
           </ul>
@@ -152,10 +151,10 @@
         </div>
         <div class="col-lg-4 col-md-4 text-center center-block">
           <h5>Connect with us</h5>
-          <a href="https://www.facebook.com/bootsnipp"><i id="social-fb" class="fab fa-facebook-square fa-3x social"></i></a>
-          <a href="https://twitter.com/bootsnipp"><i id="social-tw" class="fab fa-twitter-square fa-3x social"></i></a>
-          <a href="https://plus.google.com/+Bootsnipp-page"><i id="social-gp" class="fab fa-google-plus-square fa-3x social"></i></a>
-          <a href="mailto:#"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
+          <a href=""><i id="social-fb" class="fab fa-facebook-square fa-3x social"></i></a>
+          <a href=""><i id="social-tw" class="fab fa-twitter-square fa-3x social"></i></a>
+          <a href=""><i id="social-gp" class="fab fa-google-plus-square fa-3x social"></i></a>
+          <a href=""><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
        </div>
       </div>
 
