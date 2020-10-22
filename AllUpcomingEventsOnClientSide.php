@@ -51,16 +51,15 @@
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                       <a class="dropdown-item" href="#">Executive Members</a>
-                      <a class="dropdown-item" href="#">Membership</a>
+                      <a class="dropdown-item" href="./membership.php">Membership</a>
                     </div>
                   </li>
                   <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle active" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                      Media Room
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                       <a class="dropdown-item" href="./Gallary.php">Gallary</a>
-                      <a class="dropdown-item" href="#">Videos</a>
                       <a class="dropdown-item" href="./AllPressReleasesOnClientSide.php">Press Release</a>
                     </div>
                   </li>
@@ -68,17 +67,17 @@
                     <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                      News &Events
                     </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item" href="AllUpcomingEventsOnClientSide.php">Upcoming Events & news</a>
+                    <div class="dropdown-menu active" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="./AllUpcomingEventsOnClientSide.php">Upcoming Events & news</a>
                     </div>
                   </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Contact Us</a>
+                  <a class="nav-link" href="./contactUs.php">Contact Us</a>
                 </li>
               </ul>
             </div>
           </nav>
-    </div>
+  </div>
 <!-- navigation bar ends here-->
 
 <!-- all press Release code starts from here -->

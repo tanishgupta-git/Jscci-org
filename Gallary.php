@@ -18,66 +18,65 @@
 <body>
     <!-- navigation bar -->
     <div class="nav-menu">
-      <nav class="navbar navbar-expand-lg navbar-light">
+        <nav class="navbar navbar-expand-lg navbar-light">
 
-          <a class="navbar-brand" href="./index.php"><img src="./assets/images/chamber-logo-3.png"> </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        
-          <div class="collapse navbar-collapse " id="navbarTogglerDemo02">
-            <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-              <li class="nav-item">
-                <a class="nav-link kam" href="./index.php">Home <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                 About us 
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="./AboutUs.php#aboutUsIntroToNCC">Introduction</a>
-                  <a class="dropdown-item" href="./AboutUs.php#aboutUsVision">Vision</a>
-                  <a class="dropdown-item" href="./AboutUs.php#aboutUsMission">Mision</a>
-                  <a class="dropdown-item" href="./AboutUs.php#aboutUsHistory">History</a>
-                  <a class="dropdown-item" href="./AboutUs.php#aboutUsObjectives">Objectives</a>
-                </div>
-              </li>
-                <li class="nav-item ">
-                  <a class="nav-link" href="#">Committe</a>
-                </li>
-              <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                   Member 
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Executive Members</a>
-                    <a class="dropdown-item" href="#">Membership</a>
-                  </div>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle active" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                   Media Room
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="./Gallary.php">Gallary</a>
-                    <a class="dropdown-item" href="#">Videos</a>
-                    <a class="dropdown-item" href="./AllPressReleasesOnClientSide.php">Press Release</a>
-                  </div>
+            <a class="navbar-brand" href="./index.php"><img src="./assets/images/chamber-logo-3.png"> </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse " id="navbarTogglerDemo02">
+              <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link kam" href="./index.php">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                   News &Events
+                   About us 
                   </a>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="AllUpcomingEventsOnClientSide.php">Upcoming Events & news</a>
+                    <a class="dropdown-item" href="./AboutUs.php#aboutUsIntroToNCC">Introduction</a>
+                    <a class="dropdown-item" href="./AboutUs.php#aboutUsVision">Vision</a>
+                    <a class="dropdown-item" href="./AboutUs.php#aboutUsMission">Mision</a>
+                    <a class="dropdown-item" href="./AboutUs.php#aboutUsHistory">History</a>
+                    <a class="dropdown-item" href="./AboutUs.php#aboutUsObjectives">Objectives</a>
                   </div>
                 </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact Us</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
+                  <li class="nav-item ">
+                    <a class="nav-link" href="#">Committe</a>
+                  </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     Member 
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="#">Executive Members</a>
+                      <a class="dropdown-item" href="./membership.php">Membership</a>
+                    </div>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     Media Room
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="./Gallary.php">Gallary</a>
+                      <a class="dropdown-item" href="./AllPressReleasesOnClientSide.php">Press Release</a>
+                    </div>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     News &Events
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="./AllUpcomingEventsOnClientSide.php">Upcoming Events & news</a>
+                    </div>
+                  </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./contactUs.php">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
   </div>
 <!-- navigation bar ends here-->
 

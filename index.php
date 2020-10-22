@@ -57,7 +57,7 @@
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                       <a class="dropdown-item" href="#">Executive Members</a>
-                      <a class="dropdown-item" href="#">Membership</a>
+                      <a class="dropdown-item" href="./membership.php">Membership</a>
                     </div>
                   </li>
                   <li class="nav-item dropdown">
@@ -66,7 +66,6 @@
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                       <a class="dropdown-item" href="./Gallary.php">Gallary</a>
-                      <a class="dropdown-item" href="#">Videos</a>
                       <a class="dropdown-item" href="./AllPressReleasesOnClientSide.php">Press Release</a>
                     </div>
                   </li>
@@ -79,7 +78,7 @@
                     </div>
                   </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Contact Us</a>
+                  <a class="nav-link" href="./contactUs.php">Contact Us</a>
                 </li>
               </ul>
             </div>
@@ -104,15 +103,7 @@
             <div class="carousel-item" style="background-image: url('./assets/images/image2.jpg');">
             </div>
             <div class="carousel-item" style="background-image: url('./assets/images/image3.jpg');">
-            <div class="carousel-item active" style="background-image: url('./assets/images/image1.jpg');">
-      
-            </div>
-  
-            <div class="carousel-item" style="background-image: url('./assets/images/image2.jpg');">
-            </div>
-            <div class="carousel-item" style="background-image: url('./assets/images/image3.jpg');">
-
-            </div>
+           </div>
   
           </div>
           
@@ -328,6 +319,5 @@ footer code -->
 
                 <script type="text/javascript" src="assets/js/jquery.easy-ticker.min.js"></script>
                 <script src="./assets/js/homepage.js"></script>
-
 </body>
 </html>
