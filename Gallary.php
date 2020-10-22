@@ -13,79 +13,76 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" type="text/css">
     <link rel="stylesheet" type="text/css" href="./assets/css/homepage.css">
-    <link rel="stylesheet" type="text/css" href="./assets/css/gallary.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/gallary2.css">
 </head>
 <body>
     <!-- navigation bar -->
     <div class="nav-menu">
-        <nav class="navbar navbar-expand-lg navbar-light">
+      <nav class="navbar navbar-expand-lg navbar-light">
 
-            <a class="navbar-brand" href="./index.php"><img src="./assets/images/chamber-logo-3.png"> </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          
-            <div class="collapse navbar-collapse " id="navbarTogglerDemo02">
-              <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link kam" href="./index.php">Home <span class="sr-only">(current)</span></a>
+          <a class="navbar-brand" href="./index.php"><img src="./assets/images/chamber-logo-3.png"> </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse " id="navbarTogglerDemo02">
+            <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+              <li class="nav-item">
+                <a class="nav-link kam" href="./index.php">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                 About us 
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="./AboutUs.php#aboutUsIntroToNCC">Introduction</a>
+                  <a class="dropdown-item" href="./AboutUs.php#aboutUsVision">Vision</a>
+                  <a class="dropdown-item" href="./AboutUs.php#aboutUsMission">Mision</a>
+                  <a class="dropdown-item" href="./AboutUs.php#aboutUsHistory">History</a>
+                  <a class="dropdown-item" href="./AboutUs.php#aboutUsObjectives">Objectives</a>
+                </div>
+              </li>
+                <li class="nav-item ">
+                  <a class="nav-link" href="#">Committe</a>
+                </li>
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                   Member 
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Executive Members</a>
+                    <a class="dropdown-item" href="#">Membership</a>
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle active" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                   Media Room
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="./Gallary.php">Gallary</a>
+                    <a class="dropdown-item" href="#">Videos</a>
+                    <a class="dropdown-item" href="./AllPressReleasesOnClientSide.php">Press Release</a>
+                  </div>
                 </li>
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                   About us 
+                   News &Events
                   </a>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="./AboutUs.php#aboutUsIntroToNCC">Introduction</a>
-                    <a class="dropdown-item" href="./AboutUs.php#aboutUsVision">Vision</a>
-                    <a class="dropdown-item" href="./AboutUs.php#aboutUsMission">Mision</a>
-                    <a class="dropdown-item" href="./AboutUs.php#aboutUsHistory">History</a>
-                    <a class="dropdown-item" href="./AboutUs.php#aboutUsObjectives">Objectives</a>
+                    <a class="dropdown-item" href="AllUpcomingEventsOnClientSide.php">Upcoming Events & news</a>
                   </div>
                 </li>
-                  <li class="nav-item ">
-                    <a class="nav-link" href="#">Committe</a>
-                  </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                     Member 
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item" href="#">Executive Members</a>
-                      <a class="dropdown-item" href="#">Membership</a>
-                    </div>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle active" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                     Media Room
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item" href="./Gallary.php">Gallary</a>
-                      <a class="dropdown-item" href="#">Videos</a>
-                      <a class="dropdown-item" href="./AllPressReleasesOnClientSide.php">Press Release</a>
-                    </div>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                     News &Events
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item" href="#">Upcoming Events & news</a>
-                    </div>
-                  </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Contact Us</a>
-                </li>
-              </ul>
-            </div>
-          </nav>
-    </div>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+  </div>
 <!-- navigation bar ends here-->
 
 
-
-
-
-    <h1> Gallary </h1><hr>
+  <h1> Gallary </h1><hr>
 
     <div id="gallery" class="container-fluid">
 <!-- query for all upcoming events images -->
@@ -102,37 +99,44 @@
             ?>
        
       <?php if(!empty($EventImageone)) { ?>
-      <div class="parentCard content">
+         <div class="image-card">
         <img src="UPLOAD/EVENTS/<?php echo($EventImageone) ?>" class="card img-responsive">
-        <div class="content-overlay"></div>
-        <div class="content-details fadeIn-bottom">
-          <p class="content-text"><?php echo $EventTitle ?></p>
-          <button type="button" class="btn btn-outline-primary btn-sm"><a href="FullUpcomingEvent.php?id=<?php echo $Id; ?>">Know More</a></button>
-        </div>
-      </div> 
+        <div class="overlay">
+         <div class="text">
+          <?php echo $EventTitle ?>
+          </div>
+       <button type="button" class="btn btn-outline-primary btn-sm"><a href="FullUpcomingEvent.php?id=<?php echo $Id; ?>">Know More</a></button>
+    </div>
+         </div>  
+
+ 
       <?php } ?>
 
             <?php if(!empty($EventImagetwo)) { ?>
-      <div class="parentCard content">
+                 <div class="image-card">
         <img src="UPLOAD/EVENTS/<?php echo($EventImagetwo) ?>" class="card img-responsive">
-        <div class="content-overlay"></div>
-        <div class="content-details fadeIn-bottom">
-          <p class="content-text"><?php echo $EventTitle ?></p>
-          <button type="button" class="btn btn-outline-primary btn-sm"><a href="FullUpcomingEvent.php?id=<?php echo $Id; ?>">Know More</a></button>
-        </div>
-      </div> 
+        <div class="overlay">
+         <div class="text">
+          <?php echo $EventTitle ?>
+          </div>
+       <button type="button" class="btn btn-outline-primary btn-sm"><a href="FullUpcomingEvent.php?id=<?php echo $Id; ?>">Know More</a></button>
+    </div>
+         </div>  
       <?php } ?>
 
 
             <?php if(!empty($EventImagethree)) { ?>
-      <div class="parentCard content">
+                 <div class="image-card">
         <img src="UPLOAD/EVENTS/<?php echo($EventImagethree) ?>" class="card img-responsive">
-        <div class="content-overlay"></div>
-        <div class="content-details fadeIn-bottom">
-          <p class="content-text"><?php echo $EventTitle ?></p>
-          <button type="button" class="btn btn-outline-primary btn-sm"><a href="FullUpcomingEvent.php?id=<?php echo $Id; ?>">Know More</a></button>
-        </div>
-      </div> 
+        <div class="overlay">
+         <div class="text">
+          <?php echo $EventTitle ?>
+          </div>
+       <button type="button" class="btn btn-outline-primary btn-sm"><a href="FullUpcomingEvent.php?id=<?php echo $Id; ?>">Know More</a></button>
+    </div>
+         </div> 
+
+ 
       <?php } ?>
 
 
@@ -154,61 +158,65 @@
 
           
       <?php if(!empty($HomePageImage)) { ?>
-      <div class="parentCard content">
+
+                        <div class="image-card">
         <img src="UPLOAD/PRESS/<?php echo($HomePageImage) ?>" class="card img-responsive">
-        <div class="content-overlay"></div>
-        <div class="content-details fadeIn-bottom">
-          <p class="content-text"><?php echo $PressTitle ?></p>
-          <button type="button" class="btn btn-outline-primary btn-sm"><a href="FullPressRelease.php?id=<?php echo $Id; ?>">Know More</a></button>
-        </div>
-      </div> 
+        <div class="overlay">
+         <div class="text">
+          <?php echo $PressTitle ?>
+          </div>
+       <button type="button" class="btn btn-outline-primary btn-sm"><a href="FullPressRelease.php?id=<?php echo $Id; ?>">Know More</a></button>
+    </div>
+         </div> 
       <?php } ?>
 
             <?php if(!empty($PressImageone)) { ?>
-      <div class="parentCard content">
+                                      <div class="image-card">
         <img src="UPLOAD/PRESS/<?php echo($PressImageone) ?>" class="card img-responsive">
-        <div class="content-overlay"></div>
-        <div class="content-details fadeIn-bottom">
-          <p class="content-text"><?php echo $PressTitle ?></p>
-          <button type="button" class="btn btn-outline-primary btn-sm"><a href="FullPressRelease.php?id=<?php echo $Id; ?>">Know More</a></button>
-        </div>
-      </div> 
+        <div class="overlay">
+         <div class="text">
+          <?php echo $PressTitle ?>
+          </div>
+       <button type="button" class="btn btn-outline-primary btn-sm"><a href="FullPressRelease.php?id=<?php echo $Id; ?>">Know More</a></button>
+    </div>
+         </div> 
+ 
       <?php } ?>
 
 
             <?php if(!empty($PressImagetwo)) { ?>
-      <div class="parentCard content">
+                                                    <div class="image-card">
         <img src="UPLOAD/PRESS/<?php echo($PressImagetwo) ?>" class="card img-responsive">
-        <div class="content-overlay"></div>
-        <div class="content-details fadeIn-bottom">
-          <p class="content-text"><?php echo $PressTitle ?></p>
-          <button type="button" class="btn btn-outline-primary btn-sm"><a href="FullPressRelease.php?id=<?php echo $Id; ?>">Know More</a></button>
-        </div>
-      </div> 
+        <div class="overlay">
+         <div class="text">
+          <?php echo $PressTitle ?>
+          </div>
+       <button type="button" class="btn btn-outline-primary btn-sm"><a href="FullPressRelease.php?id=<?php echo $Id; ?>">Know More</a></button>
+    </div>
+         </div> 
+
       <?php } ?>
 
 
           <?php } ?>
 
         </div>
-    <!-- 
-footer code -->
 
 
 
 
-
-
-
-<section id="lab_social_icon_footer" class="allButFooter">
+        
+    
+<!--footer code -->
+ <section id="lab_social_icon_footer" class="allButFooter">
     <div class="container">
       <div class="row footer_part">
         <div class="col-lg-4 col-md-4 footer-links">
           <h5>Useful Links</h5>
           <ul>
-            <li><i class="fas fa-chevron-right"></i><a href="#">Home</a></li>
-            <li><i class="fas fa-chevron-right"></i><a href="#">About us</a></li>
-            <li><i class="fas fa-chevron-right"></i><a href="#">Commitee</a></li>
+            <li><i class="fas fa-chevron-right"></i><a href="index.php">Home</a></li>
+            <li><i class="fas fa-chevron-right"></i><a href="AboutUs.php">About us</a></li>
+            <li><i class="fas fa-chevron-right"></i><a href="">Commitee</a></li>
             <li><i class="fas fa-chevron-right"></i><a href="Dashboard.php">Admin Login</a></li>
           </ul>
         </div>
@@ -224,10 +232,10 @@ footer code -->
         </div>
         <div class="col-lg-4 col-md-4 text-center center-block">
           <h5>Connect with us</h5>
-          <a href="https://www.facebook.com/bootsnipp"><i id="social-fb" class="fab fa-facebook-square fa-3x social"></i></a>
-          <a href="https://twitter.com/bootsnipp"><i id="social-tw" class="fab fa-twitter-square fa-3x social"></i></a>
-          <a href="https://plus.google.com/+Bootsnipp-page"><i id="social-gp" class="fab fa-google-plus-square fa-3x social"></i></a>
-          <a href="mailto:#"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
+          <a href=""><i id="social-fb" class="fab fa-facebook-square fa-3x social"></i></a>
+          <a href=""><i id="social-tw" class="fab fa-twitter-square fa-3x social"></i></a>
+          <a href=""><i id="social-gp" class="fab fa-google-plus-square fa-3x social"></i></a>
+          <a href=""><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
        </div>
       </div>
 
@@ -236,8 +244,8 @@ footer code -->
         </p>
     </div>
   </section>
-<!-- 
-footer code ends here-->
+
+<!-- footer code ends here-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
